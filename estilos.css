@@ -1,0 +1,855 @@
+/*--------css-------*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+  background: blue;
+  width: 100%;
+  height: 5em;
+
+}
+main{
+	width: 100%;
+	margin: 0 auto;
+}
+
+img {
+	width: 100%;
+    
+}
+
+h1 {
+	background: url(imagenes/logo2.png) no-repeat;
+    height: 2.5em;
+    text-indent: -550px;
+    overflow: hidden;
+    margin-left: 80%;
+}	
+
+footer {
+	max-width: 1100px;
+    height: 15em;
+    background-color: black;
+    overflow: hidden;
+    color: white;
+    margin: auto;
+    box-shadow: 0px 15px 22px -9px black;
+    text-align: center;
+    padding: 17px 0px;
+}
+
+#barra {
+	
+	width: 100%;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: blue;
+	transition: height .5s ease;
+	overflow: hidden;
+}
+
+#barra li {
+	list-style: none;
+	margin: 1em;
+	width: 90%;
+	display: inline-block;
+}
+
+#barra li a {
+	text-decoration: none;
+    display: block;
+    background: #0096ff63;
+    color: black;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 10px;
+    box-shadow: -1px 4px 13px -7px black;
+    border: 0.5px solid gray;
+}
+textarea {	
+	resize: none;
+	margin: 1em 1em;
+	width: 89%;
+	padding: 1em 1em;
+}
+input {
+    margin: 1em 1em;
+    width: 90%;
+    padding: 1em 1em;
+    border-radius: 10px;	
+}
+
+#contacto > aside {
+	background:#0008f7;	
+}
+#principal > h2 {
+		display: none;
+}
+	
+	
+@media screen and ( min-width: 882px ){
+
+	#hamburguesa {
+		display: none;
+	
+	}
+	iframe {
+		width: 94%;
+		border: 0;
+		margin: 2em;
+		border-radius: 20px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#video23 {
+		background: red;
+		padding: 3em 3em;
+		border-radius: 50px 0px 0px 0px
+	}
+	section {
+		max-width: 1100px;
+		margin: auto;
+		/*box-shadow: -5px -1px 13px -5px black;*/
+	}
+	main > #principal {
+		display: flex;
+		flex-direction: column;
+	}
+	#principal > #bicicletas {
+		display: flex;
+		flex-direction: column;
+		
+	}
+	#principal > #bicicletas > #texto01 {
+		display: flex;
+		flex-direction: row;
+		
+	}
+	/*#principal > figure > figcaption {
+		margin-left: 32rem;
+		font-size: 7rem;
+		position: absolute;
+		margin-top: 16.7rem;
+		color: white;
+	}*/
+	#texto01 > #img1 {
+		margin: 0;
+		height: 23em;
+		width: 100%;
+		background: url(imagenes/0007.png) no-repeat;
+		background-color: #90bbe161;
+		border-radius: 0px 203px 0px 0px;
+	}
+	#texto01 > div {
+		width: 80%;
+		padding: 1em 1em;
+		font-size: 1.3em;
+		line-height: 1.3em;
+		margin-bottom: 0em;
+		
+	}
+	#bicicletas > #texto01 > div > p a {
+		display: none;
+	}
+	#bicicletas > h2 {
+		font-size: 2.5em;
+		padding: 1em 1em;
+		margin-left: 9.9em;
+	}
+	#bicicletas > h3 {
+		font-size: 2em;
+		margin-left: 13.7em;
+	}
+	textarea {
+		resize: none;
+		margin: 1em 6em;
+		width: 72%;
+	}
+	
+	
+	#menu {
+		display: inline-block;
+		width: 70%;
+		vertical-align: middle;
+	}
+
+	#barra {
+		position: absolute;
+		height: auto;
+		background: none;
+		line-height: 10em;
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	#barra li {
+		width: 130px;
+		margin: 0em 1em;
+		text-align: center;
+	}
+	/*h1 {
+		background: url(imagenes/logo.png) no-repeat ;
+		height: 3.5em;
+		text-indent: -250px;
+		overflow: hidden;
+		margin: 0em 0em;
+	}	*/
+	
+	#contacto {
+		display: flex;
+		flex-direction: column;	
+		width: 100%;
+		
+	}
+	#contacto > h2 {
+		font-size: 2em;
+	}
+	#contacto > aside {
+		display: flex;
+		flex-direction: row;
+		width: 100%
+	}
+	#contacto > aside > div {
+		width: 36%;
+		margin: 1em 4em;
+		padding: 1em 1em;
+	}
+	#contacto > aside > div > iframe {
+		width: 93%;
+		border-radius: 15px;
+		height: 80%;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > form > #datos {
+		display: flex;
+		flex-direction: row;
+		margin: 1em 4em;
+	
+	}
+	#contacto > aside > form > #datos3 {
+		display: flex;
+		flex-direction: row;
+		margin: 1em 4em;
+	
+	}
+	#contacto > aside > form > #envio {
+		display: flex;
+		flex-direction: row;
+		margin: 1em 4em;
+		width:50%;
+	}
+
+	footer ul li {
+		display: inline-block;
+		margin: 15px 0px;
+	}
+	footer > div > #menu1 >  li {
+		display: inline-block;
+		height: 3em;
+		padding: 10px 10px;
+	}
+	
+	footer > div > #menu1 {
+		height: 7em;
+		background: #878790;
+		width: 100%;
+		padding: 1em 1em;
+		margin: 2em 0em;
+				
+	}
+	
+	footer > div > #menu1 li a {
+		background: url(imagenes/sprite.png) no-repeat white;
+		border-radius: 20px;
+		padding: 24px 23px;
+		font-size: 0px;
+		border: 1px solid #878790;
+	}
+		
+	#menu1  li:nth-child(2) a{
+		background-position: -107px -201px;
+	}
+	
+	#menu1 li:nth-child(3) a{
+		background-position: -55px -200px;
+	}
+	
+	#menu1 li:nth-child(4) a{
+		background-position:-205px -201px
+	}
+	
+	#menu1 li:nth-child(5) a{
+		background-position: -157px -201px
+	}
+
+	#menu1 li:nth-child(1) a{
+		background-position: -3px -201px;
+	}
+
+}	
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 521px) and (max-width: 881px) {
+	
+	
+	iframe {
+		width: 80%;
+		height: 100%;
+		border: 0;
+		margin: 2em;
+	}
+	
+	h1 {
+		margin-left: 80%;
+	} 
+	
+	
+	
+	main > #principal {
+		display: flex;
+		flex-direction: column;
+	}
+	#principal > #bicicletas {
+		display: flex;
+		flex-direction: column;
+		padding: 2%;
+	}
+	#principal > #bicicletas > h2 {
+		font-size: 3em;
+		padding: 1% 0%;
+	}
+	#principal > #bicicletas > h3 {
+		font-size: 2em;
+		padding: 4% 0%;
+		
+	}
+	#principal > #bicicletas > #texto01 {
+		display: flex;
+		flex-direction: row;
+		line-height: 1.5em;	
+	}
+	
+	#bicicletas > #texto01 > #texto2 {
+		padding: 1em;
+	}
+	#bicicletas > #texto01 > img {
+		display: none;
+	
+	}
+	
+	#principal > #bicicletas > #texto01 > div > p a{
+		display: none;
+	}
+	
+	#video23 > figcaption {
+		font-size: 2em;
+		padding: 3% 2%;
+		border: 2px solid black;
+		border-radius: 20px;
+		box-shadow: 0px 15px 22px -9px black;
+		width: 50%;
+	}
+	#contacto {
+		display: flex;
+		flex-direction: column;	
+		width: 100%;
+		
+	}
+	
+	#contacto > h2 {
+		font-size: 2.5em;
+		padding: 0.5em 2.4em;
+		background: #5a5af3;
+	}
+	#contacto > aside {
+		display: flex;
+		flex-direction: row;
+		width: 100%
+	}
+	#contacto > aside > div > iframe {
+		width: 80%;
+		border-radius: 15px;
+		height: 80%;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > div {
+		width: 83%;
+		margin: 0em 0em;
+		padding: 2em 0em;
+
+	
+	}
+	#contacto > aside > form > #datos {
+		display: flex;
+		flex-direction: row;
+		margin: 1em 4em;
+	
+	}
+	#contacto > aside > form > #datos3 {
+		display: flex;
+		flex-direction: row;
+		margin: 1em 4em;
+	
+	}
+	#contacto > aside > form > #envio {
+		display: flex;
+		flex-direction: row;
+		width: 46%;
+		margin: 1em 6em;
+
+	}
+	
+	textarea {
+		resize: none;
+		margin: 1em 7em;
+		width: 69%;
+
+	}
+	#contacto >  aside > form > #envio > input {
+		margin: 0.7em .5em;
+		width: 90%;
+		padding: 1em 2em;
+		border-radius: 10px;
+			
+	}
+	input {
+		margin: 0.7em 2.5em;
+		width: 90%;
+		padding: 1em 2em;
+		border-radius: 10px;
+		
+	}
+	
+	
+	footer ul li {
+		display: inline-block;
+		margin: 15px 0px;
+	}
+	footer > div > #menu1 >  li {
+		display: inline-block;
+		height: 3em;
+		padding: 10px 10px;
+	}
+	
+	footer > div > #menu1 {	
+		height: 9em;
+		background: #878790;
+		width: 100%;
+		margin: 2em 0em;
+				
+	}
+	
+	footer > div > #menu1 li a {
+		background: url(imagenes/sprite.png) no-repeat white;
+		border-radius: 20px;
+		padding: 24px 23px;
+		font-size: 0px;
+		border: 1px solid #878790;
+	}
+		
+	#menu1  li:nth-child(2) a{
+		background-position: -107px -201px;
+	}
+	
+	#menu1 li:nth-child(3) a{
+		background-position: -55px -200px;
+	}
+	
+	#menu1 li:nth-child(4) a{
+		background-position:-205px -201px
+	}
+	
+	#menu1 li:nth-child(5) a{
+		background-position: -157px -201px
+	}
+
+	#menu1 li:nth-child(1) a{
+		background-position: -3px -201px;
+	}
+	
+	
+	
+	
+	
+	
+	
+}
+
+@media screen and (max-width: 520px) {
+
+	nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		
+	}
+	
+	iframe {
+		width: 80%;
+		height: 100%;
+		border: 0;
+		margin: 2em;
+		border-radius: 20px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	header > h1 {
+		margin-left: 60%;
+		
+	}
+	#video23 {
+		padding: 1em 1em;
+	}
+	#video23 > figcaption {
+		font-size: 1.7rem;
+		padding: 1em 0em;
+		padding-bottom: 0;
+	}
+	#hamburguesa li {
+		list-style: none;
+		text-indent: -100px;
+		overflow: hidden;
+		margin-top: .75em;
+		width: 2.5em;
+		
+	}
+	
+	#hamburguesa li a {
+		background: url("imagenes/menu.png") no-repeat center center;
+		background-size: cover;
+		display: block;
+		height: 2.5em;
+	}
+	
+	#hamburguesa li:last-child {
+		display: none;
+	}
+	
+	nav:target #barra {
+		height: calc( 100vh - 4em );
+	}
+	
+	nav:target #hamburguesa li:first-child {
+		display: none;	
+	}
+	
+	nav:target #hamburguesa li:last-child {
+		display: block;
+	}
+
+	#contacto > h2 {
+		font-size: 2em;
+		background: blue;
+		padding: 1em 0.3em;
+		color: white;
+
+	}
+	
+	#contacto > aside > form > #envio {
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 0em 0em;
+		width: 94%;
+	}
+
+	#contacto > aside > div > iframe {
+		width: 89%;
+		border-radius: 15px;
+		height: 80%;
+		box-shadow: 0px 15px 22px -9px black;
+		margin: 1em 1em;
+	}
+	
+	#bicicletas > h2 {
+		text-align: center;
+		font-size: 2rem;
+		padding: 0.3em;
+	}
+	
+	#bicicletas > h3 {
+		text-align: center;
+		font-size: 1.7rem;
+		padding: 0.3em;
+	}
+	
+	/*#principal > figure > figcaption {
+		margin-left: 12rem;
+		font-size: 2rem;
+		position: absolute;
+		margin-top: 6.4rem;
+		color: white;
+	}
+	#principal > figure > figcaption:hover {
+		margin-left: 10rem;
+		font-size: 2rem;
+		position: absolute;
+		margin-top: 5.1rem;
+		color: green;
+	}*/
+	#texto01 {
+		padding: 1.2em 1em;
+		line-height: 1.5em;
+		border-radius: 0px 0px 78px 0px;;
+
+	}
+	
+	#texto01 > div > p > a {
+		border: 2px solid black;
+		padding: .3em 1em;
+		font-size: 1.4em;
+		border-radius: 10px;
+		text-decoration: none;
+		color: white;
+		background: blue;
+		margin-left: 30%;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	
+	#texto01 > #texto02 {
+		display: none;
+	}
+	
+	#video01 > figure > div > iframe {
+		padding: 1em 1em;
+	}
+	
+	#ecologia > #uno > #texto3 {
+		display: none;
+	} 
+	#ecologia > #uno > p > a {
+		border: 2px solid black;
+		padding: .3em 1em;
+		font-size: 1.4em;
+		border-radius: 10px;
+		text-decoration: none;
+		color: white;
+		background: blue;
+		margin-left: 30%;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#ecologia > #uno > div {
+		padding: 1.5em 0em;
+	}
+	#uno {
+		padding: 1.2em 1em;
+		line-height: 1.5em;
+		border-radius: 0px 0px 78px 0px;;
+
+	}
+	
+	#uno > h2 {
+		font-size: 1.7rem;
+		padding: 1em 0em;
+	}
+	#uno > h3 {
+		font-size: 1.7rem;
+		padding: 1em 0em;
+	}
+	#bicimundo {
+		display: flex;
+		flex-direction: column;
+	}
+	#bicimundo > h3 {
+		padding: .5em .6em;
+		font-size: 2rem;
+	}
+	#bicimundo > h2  {
+		font-size: 3em;
+		padding: .5em 0.3em;
+		padding-bottom: 0;
+	}
+	#bicimundo > #londres{
+		display: flex;
+		flex-direction: column;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #londres > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #londres > h5{
+		width: 59%;
+		margin: .5em;
+	}
+	#bicimundo > #londres > p{
+		width: 57%;
+		padding: 2%;
+	}
+	#bicimundo > #rio{
+		display: flex;
+		flex-direction: column;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #rio > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #rio > h5{
+		width: 59%;
+		margin: .5em;
+	}
+	#bicimundo > #rio > p{
+		width: 57%;
+		padding: 2%;
+	}
+	
+	#bicimundo > #madrid{
+		display: flex;
+		flex-direction: column;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #madrid > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #madrid > h5{
+		width: 59%;
+		margin: .5em;
+	}
+	#bicimundo > #madrid > p{
+		width: 57%;
+		padding: 2%;
+	}
+	
+	#bicimundo > #amsterdam{
+		display: flex;
+		flex-direction: column;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #amsterdam > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #amsterdam > h5{
+		width: 59%;
+		margin: .5em;
+	}
+	#bicimundo > #amsterdam > p{
+		width: 57%;
+		padding: 2%;
+		font-size: 0.9em;
+	}
+	
+	#bicimundo > #newyork{
+		display: flex;
+		flex-direction: column;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #newyork > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #newyork > h5{
+		width: 40%;
+		margin: .5em;
+	}
+	#bicimundo > #newyork > p{
+		width: 57%;
+		padding: 2%;
+		font-size: .9em;
+	}
+	
+	
+	footer {
+		height: 15em;
+		background-color: black;
+		overflow: hidden;
+		color: white;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	
+	footer ul li {
+		display: inline-block;
+		margin: 15px 0px;
+	}
+	footer > div {
+		padding-bottom: 1em;
+	}
+	footer > div > #menu1 >  li {
+		display: inline-block;
+		height: 3em;
+		width: 16%;
+		padding: 0.5em;
+	}
+	
+	footer > div > #menu1 {
+		height: 5em;
+		background: #878790;
+		width: 100%;
+		
+		
+	}
+	
+	footer > div > #menu1 li a {
+		background: url(imagenes/sprite.png) no-repeat white;
+		border-radius: 20px;
+		padding: 24px 23px;
+		font-size: 0px;
+		border: 1px solid #878790;
+	}
+		
+	#menu1  li:nth-child(2) a{
+		background-position: -107px -201px;
+	}
+	
+	#menu1 li:nth-child(3) a{
+		background-position: -55px -200px;
+	}
+	
+	#menu1 li:nth-child(4) a{
+		background-position:-205px -201px
+	}
+	
+	#menu1 li:nth-child(5) a{
+		background-position: -157px -201px
+	}
+
+	#menu1 li:nth-child(1) a{
+		background-position: -3px -201px;
+	}
+
+}
+
+
+	
+
+						
+						
