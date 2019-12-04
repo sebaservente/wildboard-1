@@ -1,11 +1,18 @@
 <?php
 // mail de destino: cambiarlo por tu mail personal
-$enviaPara = 'omar.toyos@davinci.edu.ar'; 
+
+$enviaPara = 'sebastian.servente@davinci.edu.ar'; 
 
 // subject del mail: el asunto que quiero que muestre
+
 $subject = 'Contacto desde la web'; 
 
-/* ruta relativa desde ESTE documento al html que quiero que se abra después de mandar el mail. También se puede poner en target una caja que estuviera display none en el mismo html que contiene el form y que al enviar el mail y volver a ese mismo html, se ajuste display block al entrar en target (en vez de ponerla en target con un vínculo lo hacemos al volver desde el php luego de enviar el mail), por ejemplo, contacto.html#enviado */
+/* ruta relativa desde ESTE documento al html que quiero que se abra después de mandar el mail. También se puede poner
+ en target una caja que estuviera display none en el mismo html que contiene el form y que al enviar el mail y 
+ volver a ese mismo html, se ajuste display block al entrar en target (
+ en vez de ponerla en target con un vínculo lo hacemos al volver desde el 
+ php luego de enviar el mail), por ejemplo, contacto.html#enviado */
+ 
 $enviado="enviado.html";
 
 //DE ACÁ PARA ABAJO NO TOCAR...

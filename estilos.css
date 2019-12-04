@@ -8,10 +8,17 @@
 }
 
 header {
-  background: blue;
-  width: 100%;
-  height: 5em;
+	background: #67c3ec;
 
+	/* El darle el mismo alto que alto de línea al header logramos 
+	que el texto de la h1 quede centrado. Al ajustar el alto al header
+	el nav no entrará pero no es problema ya que lo vamos a trabajar con
+	posicionamiento. */
+
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	color: white;
 }
 main{
 	width: 100%;
@@ -23,37 +30,27 @@ img {
     
 }
 
-h1 {
-	background: url(imagenes/logo2.png) no-repeat;
-    height: 2.5em;
-    text-indent: -550px;
-    overflow: hidden;
-    margin-left: 80%;
-}	
+
 
 footer {
 	max-width: 1100px;
-    height: 15em;
     background-color: black;
     overflow: hidden;
     color: white;
     margin: auto;
     box-shadow: 0px 15px 22px -9px black;
     text-align: center;
-    padding: 17px 0px;
+}
+#barra {
+	width: 100%;
+	height: calc(100vh - 4em);
+	position: absolute;
+	top: 4em;
+	left: -100%;
+	background: #F36;
+	transition: left .5s ease;
 }
 
-#barra {
-	
-	width: 100%;
-	height: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: blue;
-	transition: height .5s ease;
-	overflow: hidden;
-}
 
 #barra li {
 	list-style: none;
@@ -64,15 +61,14 @@ footer {
 
 #barra li a {
 	text-decoration: none;
-    display: block;
-    background: #0096ff63;
-    color: black;
-    text-align: center;
-    line-height: 2em;
-    border-radius: 10px;
-    box-shadow: -1px 4px 13px -7px black;
-    border: 0.5px solid gray;
+	display: block;
+	background: #F9F;
+	color: black;
+	text-align: center;
+	line-height: 2em;
 }
+
+
 textarea {	
 	resize: none;
 	margin: 1em 1em;
@@ -87,36 +83,270 @@ input {
 }
 
 #contacto > aside {
-	background:#0008f7;	
+	background:#67c3ec;	
 }
 #principal > h2 {
 		display: none;
 }
+@media screen and (min-width: 600px) and (max-width: 700px){
+
 	
 	
-@media screen and ( min-width: 882px ){
+
+	h1 {
+		background: url(imagenes/logo2.png) no-repeat #67c3ec;
+		height: 2.5em;
+		text-indent: -2050px;
+		overflow: hidden;
+		/*margin-left: 70%;*/
+	}
+	#bicicletas > h3 {
+		font-size: 2.5rem;
+		font-family: 'Roboto', sans-serif;
+	}
+	#contacto {
+		display: flex;
+		flex-direction: row;	
+		width: 100%;
+		
+	}
+	
+	#contacto > aside {
+		display: flex;
+		flex-wrap: wrap;
+		width: 50%
+	}
+	#contacto > aside > div {
+		width:50%;
+		background: #67c3ec;	;
+	}
+	#contacto > aside > form {
+		width: 50%;		
+		background: #67c3ec;	;
+		overflow: hidden;
+	}
+	#contacto > aside > div > iframe {
+		width: 93%;
+		border-radius: 15px;		
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	
+	#contacto > aside > form > #comentarios  {
+		margin-left: 5%;
+	}
+	
+}
+
+@media screen and (min-width: 522px) and (max-width: 600px){
+
+	body{
+		background: yellow;
+	}
+	
+	#bicicletas > h3 {
+		font-size: 2.5rem;
+		font-family: 'Roboto', sans-serif;
+	}
+	#ecologia {
+		background: #0096ff63;		
+		max-width: 1100px;
+		margin: auto;
+		width: 100%;
+	}
+	#ecologia > #dos {
+		display: flex;
+		
+		justify-content: center;
+		width: 100%;
+	}
+	#ecologia > #dos > div {
+		margin: 1em;
+	}
+	#ecologia > #uno {
+		padding: 40px;
+		width: 100%;
+		font-size: 1.5em;
+		
+	}
+	#ecologia > #uno > h3{
+		font-family: verdana;
+		font-size: 2.5em;
+		padding-bottom: 1rem;
+	}
+	#ecologia > #uno > p > a {
+		display: none;
+		
+	}
+	#ecologia > #dos > :nth-child(1){
+		width: 250px;
+		height: 258px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background: url(imagenes/0011pc.jpg) no-repeat #0096ff29;
+		margin-bottom: 25px;
+		margin-top: 55px;
+		box-shadow: -5px -1px 13px -5px black;
+	
+	}
+	
+	#ecologia > #dos > :nth-child(2){
+		width: 252px;
+		height: 258px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background: url(imagenes/0015pc.jpg) no-repeat #0096ff29;
+		margin-bottom: 25px;
+		margin-top: 55px;
+		box-shadow: -5px -1px 13px -5px black;
+	}
+	
+	#ecologia > #dos > :nth-child(3){
+		width: 252px;
+		height: 258px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background: url(imagenes/0013pc.jpg) no-repeat #0096ff29;
+		margin-bottom: 25px;
+		margin-top: 55px;
+		box-shadow: -5px -1px 13px -5px black;
+	}
+	#ecologia > #dos > :nth-child(4){
+		width: 252px;
+		height: 258px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background: url(imagenes/0013pc.jpg) no-repeat #0096ff29;
+		margin-bottom: 25px;
+		margin-top: 55px;
+		box-shadow: -5px -1px 13px -5px black;
+	}
+
+}
+	
+
+/*h1 {
+		background: url(imagenes/logo2.png) no-repeat;
+		height: 2.5em;
+		text-indent: -2050px;
+		overflow: hidden;
+		/*margin-left: 75%;
+	}*/
+
+@media screen and (min-width: 521px) and (max-width: 600px){
+	
+	#contacto > aside {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%
+	}
+	#contacto > aside > form > #comentarios  {
+		margin-left: 5%;
+	}
+	
+	#contacto > h2 {
+		font-size: 2em;
+		padding: 0.5em 2.4em;
+		background: #67c3ec;
+		border-radius: 25px 25px 0px 0px;
+	}
+	
+	
+}
+
+
+
+
+	
+@media screen and ( min-width: 982px ){
+	
+	
 
 	#hamburguesa {
 		display: none;
-	
 	}
+
+	/* Reseteamos el alto del header que le dimos en mobile para que crezca ahora de acuerdo a su contenido como cualquier caja de bloque. */
+
+	header {
+		height: auto;
+		max-width: 1100px;
+		margin: auto;
+	}
+
+	section {
+		max-width: 1100px;
+		margin: auto;
+	}
+
+	/* Ahora queremos el nav y el logo en línea, para ello los ponemos inline-block y los centramos verticalmente para que no desequilibren por diferencia de contenido. Al menú le damos un ancho para que entren los botones en línea dentro. No es necesario quitarle el position absolute ya que se lo dimos dentro de la consulta de mobile que no se aplica ahora. */
+
+	h1 {
+		display: -webkit-inline-box;
+		vertical-align: middle;
+	
+		background: url(imagenes/logo2.png) no-repeat #67c3ec;
+		height: 2em;
+		text-indent: -2050px;
+		overflow: hidden;
+		margin-left: 5%;
+	}
+
+	
+	#menu {
+		display: inline-block;
+		width: 70%;
+		vertical-align: middle;
+	}
+
+	/* Cambiamos el posicionamiento de la barra de absoluto a static (flujo normal o natural) para que ocupe su lugar dentro del nav, también reseteamos el alto que le dimos en mobile para que ocupe toda la pantalla disponible allí y alineamos el texto a la derecha para correr los botones hacia ese costado. Por último, quitamos el color de fondo para que los botones se integren al header. */
+
+	#barra {
+		position: static;
+		height: auto;
+		text-align: right;
+		background: none;
+	}
+
+	/* Ajustamos un nuevo tamaño para los botones en px para que se ubiquen en línea (ya tenían aplicado el display inline-block en mobile para que los podamos poner en línea ahora). También les reseteamos el margen vertical que antes nos servía para separar los botones apilados. Corregimos la alineación del texto de los botones para que no queden a la derecha. */
+
+	#barra li {
+		width: 130px;
+		margin: 0 1em;
+		text-align: center;
+	}
+	
 	iframe {
-		width: 94%;
-		border: 0;
+	
+		text-align: center;
+		width: 70%;
 		margin: 2em;
 		border-radius: 20px;
 		box-shadow: 0px 15px 22px -9px black;
 	}
 	#video23 {
-		background: red;
 		padding: 3em 3em;
-		border-radius: 50px 0px 0px 0px
+		background: linear-gradient(to bottom, #67c3ec, white);
 	}
-	section {
-		max-width: 1100px;
-		margin: auto;
-		/*box-shadow: -5px -1px 13px -5px black;*/
+	#video23 > div{
+		margin-left: 20%;
 	}
+	#video23 > figcaption {
+
+		font-size: 1.5em;
+		text-decoration: none;
+		color: black;
+	}
+	#video23 > figcaption > a {
+		font-family: 'Roboto', sans-serif;
+		font-size: 2em;
+		text-decoration: none;
+		color: black;
+	}
+	#video23 > figcaption a:hover {
+		color: #67c3ec;
+		text-shadow: 1px 1px 2px black; 
+	}
+
 	main > #principal {
 		display: flex;
 		flex-direction: column;
@@ -131,13 +361,7 @@ input {
 		flex-direction: row;
 		
 	}
-	/*#principal > figure > figcaption {
-		margin-left: 32rem;
-		font-size: 7rem;
-		position: absolute;
-		margin-top: 16.7rem;
-		color: white;
-	}*/
+
 	#texto01 > #img1 {
 		margin: 0;
 		height: 23em;
@@ -157,58 +381,258 @@ input {
 	#bicicletas > #texto01 > div > p a {
 		display: none;
 	}
-	#bicicletas > h2 {
-		font-size: 2.5em;
-		padding: 1em 1em;
-		margin-left: 9.9em;
-	}
+	
 	#bicicletas > h3 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 2.5rem;
+		padding: 2rem 0.4rem;
+		margin-left: 10.9em;
+
+	}
+	#bicicletas > h4 {
+		font-family: 'Roboto', sans-serif;
 		font-size: 2em;
-		margin-left: 13.7em;
+		margin-left: 13.6em;
+		padding: 1rem 0.4rem;
 	}
 	textarea {
 		resize: none;
 		margin: 1em 6em;
 		width: 72%;
 	}
-	
-	
-	#menu {
-		display: inline-block;
-		width: 70%;
-		vertical-align: middle;
-	}
-
-	#barra {
-		position: absolute;
-		height: auto;
-		background: none;
-		line-height: 10em;
-		margin: 0 auto;
+	#ecologia {
+		background: #0096ff63;		
+		max-width: 1100px;
+		margin: auto;
 		width: 100%;
 	}
-	
-	#barra li {
-		width: 130px;
-		margin: 0em 1em;
-		text-align: center;
+	#ecologia > #dos {
+		display: flex;
+		
+		justify-content: center;
+		width: 100%;
 	}
-	/*h1 {
-		background: url(imagenes/logo.png) no-repeat ;
-		height: 3.5em;
-		text-indent: -250px;
-		overflow: hidden;
-		margin: 0em 0em;
-	}	*/
+	#ecologia > #dos > div {
+		margin: 1em;
+	}
+	#ecologia > #uno {
+		padding: 40px;
+		width: 100%;
+		font-size: 1.5em;
+		
+	}
+	#ecologia > #uno > h3{
+		font-family: verdana;
+		font-size: 2.5em;
+		padding-bottom: 1rem;
+	}
+	#ecologia > #uno > p > a {
+		display: none;
+		
+	}
+	#ecologia > #dos > :nth-child(1){
+		width: 250px;
+		height: 258px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background: url(imagenes/0011pc.jpg) no-repeat #0096ff29;
+		margin-bottom: 25px;
+		margin-top: 55px;
+		box-shadow: -5px -1px 13px -5px black;
+	
+	}
+	
+	#ecologia > #dos > :nth-child(2){
+		width: 252px;
+		height: 258px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background: url(imagenes/0015pc.jpg) no-repeat #0096ff29;
+		margin-bottom: 25px;
+		margin-top: 55px;
+		box-shadow: -5px -1px 13px -5px black;
+	}
+	
+	#ecologia > #dos > :nth-child(3){
+		width: 252px;
+		height: 258px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background: url(imagenes/0013pc.jpg) no-repeat #0096ff29;
+		margin-bottom: 25px;
+		margin-top: 55px;
+		box-shadow: -5px -1px 13px -5px black;
+	}
+	#ecologia > #dos > :nth-child(4){
+		width: 252px;
+		height: 258px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background: url(imagenes/0013pc.jpg) no-repeat #0096ff29;
+		margin-bottom: 25px;
+		margin-top: 55px;
+		box-shadow: -5px -1px 13px -5px black;
+	}
+	
+
+	#bicimundo {
+		display: flex;
+		flex-direction: column;
+		box-shadow: 0px 15px 22px -9px black;
+		
+	}
+	#bicimundo > h3 {
+		padding: .5em .6em;
+		font-size: 2rem;
+	}
+	#bicimundo > h2  {
+		font-size: 3em;
+		font-family: verdana;
+		padding: .5em 0.3em;
+		padding-bottom: 0;
+		
+	}
+	#bicimundo > #londres{
+		display: flex;
+		flex-direction: column;
+		width: 400px;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		margin-left: 50%;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #londres > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #londres > h5{
+		width: 59%;
+		margin: .5em;
+	}
+	#bicimundo > #londres > p{
+		width: 57%;
+		padding: 2%;
+	}
+	#bicimundo > #rio{
+		display: flex;
+		flex-direction: column;
+		width: 400px;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		margin-left: 30%;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #rio > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #rio > h5{
+		width: 59%;
+		margin: .5em;
+	}
+	#bicimundo > #rio > p{
+		width: 57%;
+		padding: 2%;
+	}
+	
+	#bicimundo > #madrid{
+		display: flex;
+		flex-direction: column;
+		width: 400px;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #madrid > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #madrid > h5{
+		width: 59%;
+		margin: .5em;
+	}
+	#bicimundo > #madrid > p{
+		width: 57%;
+		padding: 2%;
+	}
+	
+	#bicimundo > #amsterdam{
+		display: flex;
+		flex-direction: column;
+		width: 400px;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		margin-left: 30%;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #amsterdam > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #amsterdam > h5{
+		width: 59%;
+		margin: .5em;
+	}
+	#bicimundo > #amsterdam > p{
+		width: 57%;
+		padding: 2%;
+		font-size: 0.9em;
+	}
+	
+	#bicimundo > #newyork{
+		display: flex;
+		flex-direction: column;
+		width: 400px;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		margin-left: 50%;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #newyork > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #newyork > h5{
+		width: 40%;
+		margin: .5em;
+	}
+	#bicimundo > #newyork > p{
+		width: 57%;
+		padding: 2%;
+		font-size: .9em;
+	}
+	
+	
 	
 	#contacto {
 		display: flex;
 		flex-direction: column;	
 		width: 100%;
+		margin-top: 1em;
 		
 	}
 	#contacto > h2 {
-		font-size: 2em;
+		font-size: 3em;
+		font-family: verdana;
+		background: #67c3ec;
+		padding: 1em 0.3em;
+		color: white;
+		border-radius: 25px 25px 0px 0px;
 	}
 	#contacto > aside {
 		display: flex;
@@ -230,7 +654,15 @@ input {
 		display: flex;
 		flex-direction: row;
 		margin: 1em 4em;
-	
+		
+	}
+	#contacto > aside > form > #datos :nth-child(1) input {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > form > #datos :nth-child(2) input {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
 	}
 	#contacto > aside > form > #datos3 {
 		display: flex;
@@ -238,13 +670,43 @@ input {
 		margin: 1em 4em;
 	
 	}
+	#contacto > aside > form > #datos3 :nth-child(1) input {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > form > #datos3 :nth-child(2) input {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > form > #comentarios :nth-child(1) {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
 	#contacto > aside > form > #envio {
 		display: flex;
 		flex-direction: row;
 		margin: 1em 4em;
 		width:50%;
 	}
-
+	#contacto > aside > form > #envio :nth-child(1) {
+		background: green;
+		color: white;
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > form > #envio :nth-child(2) {
+		background: yellow;
+		color: black;
+		border: 1px solid green;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	footer {
+		height: 10.5em;
+		background-color: black;
+		overflow: hidden;
+		color: white;
+		box-shadow: 0px 15px 22px -9px black;
+	}
 	footer ul li {
 		display: inline-block;
 		margin: 15px 0px;
@@ -256,7 +718,7 @@ input {
 	}
 	
 	footer > div > #menu1 {
-		height: 7em;
+		height: 6em;
 		background: #878790;
 		width: 100%;
 		padding: 1em 1em;
@@ -298,12 +760,20 @@ input {
 
 
 
+/*---tablet---*/
 
 
 
 
-@media screen and (min-width: 521px) and (max-width: 881px) {
+
+@media screen and (min-width: 521px) and (max-width: 981px) {
 	
+	
+	
+	
+	body {
+		margin: 0 auto;
+	}
 	
 	iframe {
 		width: 80%;
@@ -311,35 +781,119 @@ input {
 		border: 0;
 		margin: 2em;
 	}
-	
 	h1 {
-		margin-left: 80%;
-	} 
+		background: url(imagenes/logo2.png) no-repeat #67c3ec;
+		height: 2.5em;
+		text-indent: -2050px;
+		overflow: hidden;
+		margin-left: 70%;
+	}
+	
+	/*h1 {
+		background: url(imagenes/logo2.png) no-repeat;
+		height: 2.5em;
+		text-indent: -2050px;
+		overflow: hidden;
+		/*margin-left: 60%;
+		vertical-align: middle;
+	}
+	
+		
+	#menu {
+		display: inline-block;
+		width: 70%;
+		vertical-align: middle;
+	}
+
+	#barra {
+		position: absolute;
+		height: auto;
+		background: none;
+		line-height: 4em;
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	#barra li {
+		width: 130px;
+		margin: 0em 1em;
+		text-align: center;
+	}*/
 	
 	
+	
+	
+	
+	
+	
+	nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	/* Sacamos la viñeta del botón y el texto (del vínculo) para que solo se vea la imagen de la hamburguesa que tendrán como fondo los vínculos. Vamos a generar un botón cuadrado con em como unidad de medida para que pueda agrandarse o achicarse dependiendo de la decisión del usuario en cuanto al tamaño de fuente por default de su browser. Ese tamaño será de 2.5em x 2.5em, entonces como el alto del header es 4em le damos un margen superior de 0.75em para que quede centrado verticalmente. El alto se lo damos al vínculo ya que hará crecer por default al li pero el ancho lo damos acá para limitar el ancho del vínculo que trabajará en bloque en su interior. */
+
+	#hamburguesa li {
+		list-style: none;
+		text-indent: -100px;
+		overflow: hidden;
+		margin-top: .75em;
+		width: 2.5em;
+	}
+
+	/* El vínculo es la "cara visible" del botón, por lo que es el que lleva la img de fondo de la hamburguesa. En este caso se lo aplicamos a ambos botones (abrir y cerrar) aunque podrían tener una distinta cada uno (la X de cierre, por ejemplo). Con background-cover hacemos que la img cubra completamente el fondo del botón ya sea que se agranda o achica. */
+
+	#hamburguesa li a {
+		background: url("imagenes/menu.png") no-repeat center center;
+		background-size: cover;
+		display: block;
+		height: 2.5em;
+	}
+
+	/* Ocultamos el botón cerrar. */
+
+	#hamburguesa li:last-child {
+		display: none;
+	}
+
+	/* Con el nav el target (presionamos el botón abrir de hamburguesa), hacemos "entrar" la barra de navegación al cambiar el valor de left a cero. También ocultamos el botón abrir y mostramos el de cerrar. */
+
+	nav:target #barra {
+		left: 0;
+	}
+
+	nav:target #hamburguesa li:first-child {
+		display: none;
+	}
+
+	nav:target #hamburguesa li:last-child {
+		display: block;
+	}
 	
 	main > #principal {
 		display: flex;
 		flex-direction: column;
 	}
-	#principal > #bicicletas {
+	#bicicletas {
 		display: flex;
 		flex-direction: column;
 		padding: 2%;
 	}
-	#principal > #bicicletas > h2 {
-		font-size: 3em;
-		padding: 1% 0%;
+	#bicicletas > h3 {
+		font-size: 2.5em;
+		padding: 1% 3%;
+		font-family: 'Roboto', sans-serif;
 	}
-	#principal > #bicicletas > h3 {
+	#principal > #bicicletas > h4 {
 		font-size: 2em;
-		padding: 4% 0%;
+		padding: 4% 3%;
 		
 	}
-	#principal > #bicicletas > #texto01 {
-		display: flex;
-		flex-direction: row;
+	#bicicletas > #texto01 {
 		line-height: 1.5em;	
+		padding: 2em;
 	}
 	
 	#bicicletas > #texto01 > #texto2 {
@@ -350,7 +904,7 @@ input {
 	
 	}
 	
-	#principal > #bicicletas > #texto01 > div > p a{
+	#bicicletas > #texto01 > div > p a{
 		display: none;
 	}
 	
@@ -362,6 +916,214 @@ input {
 		box-shadow: 0px 15px 22px -9px black;
 		width: 50%;
 	}
+	#ecologia {
+		background: #0096ff63;		
+		max-width: 1100px;
+		margin: auto;
+		width: 100%;
+	}
+	#ecologia > #dos {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	#ecologia > #dos > div {
+		margin: 1em;
+	}
+	#ecologia > #uno {
+		padding: 40px;
+		width: 100%;
+		font-size: 1.5em;
+		
+	}
+	#ecologia > #uno > h3{
+		font-family: verdana;
+		font-size: 2.5em;
+		padding-bottom: 1rem;
+	}
+	#ecologia > #uno > p > a {
+		display: none;
+		
+	}
+	#ecologia > #dos > :nth-child(1){
+		width: 180px;
+		height: 180px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background: url(imagenes/0011pc.jpg) no-repeat #0096ff29;
+		margin-bottom: 25px;
+		box-shadow: -5px -1px 13px -5px black;
+	
+	}
+	
+	#ecologia > #dos > :nth-child(2){
+		width: 180px;
+		height: 180px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background: url(imagenes/0015pc.jpg) no-repeat #0096ff29;
+		margin-bottom: 25px;
+		box-shadow: -5px -1px 13px -5px black;
+	}
+	
+	#ecologia > #dos > :nth-child(3){
+		width: 180px;
+		height: 180px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background: url(imagenes/0013pc.jpg) no-repeat #0096ff29;
+		margin-bottom: 25px;
+		box-shadow: -5px -1px 13px -5px black;
+	}
+	#ecologia > #dos > :nth-child(4){
+		width: 180px;
+		height: 180px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background: url(imagenes/0013pc.jpg) no-repeat #0096ff29;
+		margin-bottom: 25px;
+		box-shadow: -5px -1px 13px -5px black;
+	}
+	
+	#bicimundo {
+		display: flex;
+		flex-direction: column;
+	}
+	#bicimundo > h3 {
+		padding: .5em .6em;
+		font-size: 2rem;
+	}
+	#bicimundo > h2  {
+		font-size: 3em;
+		padding: .5em 0.3em;
+		padding-bottom: 0;
+	}
+	#bicimundo > #londres{
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #londres > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #londres > h5{
+		width: 59%;
+		margin: .5em;
+	}
+	#bicimundo > #londres > p{
+		width: 57%;
+		padding: 2%;
+	}
+	#bicimundo > #rio{
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #rio > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #rio > h5{
+		width: 59%;
+		margin: .5em;
+	}
+	#bicimundo > #rio > p{
+		width: 57%;
+		padding: 2%;
+	}
+	
+	#bicimundo > #madrid{
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #madrid > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #madrid > h5{
+		width: 59%;
+		margin: .5em;
+	}
+	#bicimundo > #madrid > p{
+		width: 57%;
+		padding: 2%;
+	}
+	
+	#bicimundo > #amsterdam{
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		margin-left: 50%;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #amsterdam > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #amsterdam > h5{
+		width: 59%;
+		margin: .5em;
+	}
+	#bicimundo > #amsterdam > p{
+		width: 57%;
+		padding: 2%;
+		font-size: 0.9em;
+	}
+	
+	#bicimundo > #newyork{
+		display: flex;
+		flex-direction: column;
+		width: 400px;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		height: auto;
+		margin: 1em;
+		margin-left: 20%;
+		border-radius: 10px;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#bicimundo > #newyork > h4{
+		width: 59%;
+		padding: .5em;
+		font-size: 1.3rem;
+	}
+	#bicimundo > #newyork > h5{
+		width: 40%;
+		margin: .5em;
+	}
+	#bicimundo > #newyork > p{
+		width: 57%;
+		padding: 2%;
+		font-size: .9em;
+	}
+	
+	
+	
+	
 	#contacto {
 		display: flex;
 		flex-direction: column;	
@@ -370,13 +1132,19 @@ input {
 	}
 	
 	#contacto > h2 {
-		font-size: 2.5em;
+		font-size: 2em;
 		padding: 0.5em 2.4em;
-		background: #5a5af3;
+		background: #67c3ec;
+		border-radius: 25px 25px 0px 0px;
 	}
 	#contacto > aside {
 		display: flex;
 		flex-direction: row;
+		width: 100%
+	}
+	#contacto > aside > form {
+		display: flex;
+		flex-direction: column;
 		width: 100%
 	}
 	#contacto > aside > div > iframe {
@@ -386,30 +1154,67 @@ input {
 		box-shadow: 0px 15px 22px -9px black;
 	}
 	#contacto > aside > div {
-		width: 83%;
+		width: 100%;
 		margin: 0em 0em;
 		padding: 2em 0em;
+		text-align: center;
+
 
 	
 	}
+
 	#contacto > aside > form > #datos {
 		display: flex;
-		flex-direction: row;
-		margin: 1em 4em;
-	
-	}
-	#contacto > aside > form > #datos3 {
-		display: flex;
-		flex-direction: row;
+		flex-wrap: nowrap;
 		margin: 1em 4em;
 	
 	}
 	#contacto > aside > form > #envio {
 		display: flex;
-		flex-direction: row;
+		flex-wrap: nowrap;
 		width: 46%;
 		margin: 1em 6em;
 
+	}
+	#contacto > aside > form > #datos3 {
+		display: flex;
+		flex-wrap: nowrap;
+		margin: 1em 4em;
+	
+	}
+	#contacto > aside > form > #datos :nth-child(1) input {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > form > #datos :nth-child(2) input {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	
+	#contacto > aside > form > #datos3 :nth-child(1) input {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > form > #datos3 :nth-child(2) input {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > form > #comentarios :nth-child(1) {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	
+	#contacto > aside > form > #envio :nth-child(1) {
+		background: green;
+		color: white;
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > form > #envio :nth-child(2) {
+		background: yellow;
+		color: black;
+		border: 1px solid green;
+		box-shadow: 0px 15px 22px -9px black;
 	}
 	
 	textarea {
@@ -433,7 +1238,17 @@ input {
 		
 	}
 	
-	
+	footer {
+		height: 10em;
+		background-color: black;
+		overflow: hidden;
+		color: white;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	footer > ul {
+		height: 3em;
+		
+	}
 	footer ul li {
 		display: inline-block;
 		margin: 15px 0px;
@@ -445,7 +1260,7 @@ input {
 	}
 	
 	footer > div > #menu1 {	
-		height: 9em;
+		height: 5em;
 		background: #878790;
 		width: 100%;
 		margin: 2em 0em;
@@ -490,35 +1305,157 @@ input {
 
 @media screen and (max-width: 520px) {
 
-	nav {
+	/*nav {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		
-	}
+	}*/
 	
-	iframe {
+	/*iframe {
 		width: 80%;
 		height: 100%;
 		border: 0;
 		margin: 2em;
 		border-radius: 20px;
 		box-shadow: 0px 15px 22px -9px black;
-	}
-	header > h1 {
+	}*/
+	h1 {
+		background: url(imagenes/logo2.png) no-repeat #67c3ec;
+		height: 2.5em;
+		text-indent: -2050px;
+		overflow: hidden;
 		margin-left: 60%;
-		
+	}
+	iframe {
+	
+		text-align: center;
+		width: 70%;
+		margin: 2em;
+		border-radius: 20px;
+		box-shadow: 0px 15px 22px -9px black;
 	}
 	#video23 {
-		padding: 1em 1em;
+		background: linear-gradient(to bottom, #67c3ec, white);
+	}
+	#video23 > div{
+		text-align: center;
 	}
 	#video23 > figcaption {
-		font-size: 1.7rem;
-		padding: 1em 0em;
-		padding-bottom: 0;
+		text-align: center;
+		font-size: 1.4em;
+		text-decoration: none;
+		color: black;
+		padding-top: 1em;
 	}
+	#video23 > figcaption > a {
+		font-family: 'Roboto', sans-serif;
+		font-size: 1.4em;
+		text-decoration: none;
+		color: black;
+		
+	}
+	#video23 > figcaption a:hover {
+		color: #67c3ec;
+		text-shadow: 1px 1px 2px black; 
+	}
+
+	nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	/* Sacamos la viñeta del botón y el texto (del vínculo) para que solo se vea la imagen de la hamburguesa que tendrán como fondo los vínculos. Vamos a generar un botón cuadrado con em como unidad de medida para que pueda agrandarse o achicarse dependiendo de la decisión del usuario en cuanto al tamaño de fuente por default de su browser. Ese tamaño será de 2.5em x 2.5em, entonces como el alto del header es 4em le damos un margen superior de 0.75em para que quede centrado verticalmente. El alto se lo damos al vínculo ya que hará crecer por default al li pero el ancho lo damos acá para limitar el ancho del vínculo que trabajará en bloque en su interior. */
+
 	#hamburguesa li {
+		list-style: none;
+		text-indent: -100px;
+		overflow: hidden;
+		margin-top: .75em;
+		width: 2.5em;
+	}
+
+	/* El vínculo es la "cara visible" del botón, por lo que es el que lleva la img de fondo de la hamburguesa. En este caso se lo aplicamos a ambos botones (abrir y cerrar) aunque podrían tener una distinta cada uno (la X de cierre, por ejemplo). Con background-cover hacemos que la img cubra completamente el fondo del botón ya sea que se agranda o achica. */
+
+	#hamburguesa li a {
+		background: url("imagenes/menu.png") no-repeat center center;
+		background-size: cover;
+		display: block;
+		height: 2.5em;
+	}
+
+	/* Ocultamos el botón cerrar. */
+
+	#hamburguesa li:last-child {
+		display: none;
+	}
+
+	/* Con el nav el target (presionamos el botón abrir de hamburguesa), hacemos "entrar" la barra de navegación al cambiar el valor de left a cero. También ocultamos el botón abrir y mostramos el de cerrar. */
+
+	nav:target #barra {
+		left: 0;
+	}
+
+	nav:target #hamburguesa li:first-child {
+		display: none;
+	}
+
+	nav:target #hamburguesa li:last-child {
+		display: block;
+	}
+
+
+	/* El nav ocupa todo el ancho del body y se posiciona absoluto en el vértice superior izquierdo de la ventana. */
+
+	/*nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	/* Sacamos la viñeta del botón y el texto (del vínculo) para que solo se vea la imagen de la hamburguesa que tendrán como fondo los vínculos. Vamos a generar un botón cuadrado con em como unidad de medida para que pueda agrandarse o achicarse dependiendo de la decisión del usuario en cuanto al tamaño de fuente por default de su browser. Ese tamaño será de 2.5em x 2.5em, entonces como el alto del header es 4em le damos un margen superior de 0.75em para que quede centrado verticalmente. El alto se lo damos al vínculo ya que hará crecer por default al li pero el ancho lo damos acá para limitar el ancho del vínculo que trabajará en bloque en su interior. */
+
+	/*#hamburguesa li {
+		list-style: none;
+		text-indent: -100px;
+		overflow: hidden;
+		margin-top: .75em;
+		width: 2.5em;
+	}
+
+	/* El vínculo es la "cara visible" del botón, por lo que es el que lleva la img de fondo de la hamburguesa. En este caso se lo aplicamos a ambos botones (abrir y cerrar) aunque podrían tener una distinta cada uno (la X de cierre, por ejemplo). Con background-cover hacemos que la img cubra completamente el fondo del botón ya sea que se agranda o achica. */
+
+	/*#hamburguesa li a {
+		background: url("imagenes/menu.png") no-repeat center center;
+		background-size: cover;
+		display: block;
+		height: 2.5em;
+	}
+
+	/* Ocultamos el botón cerrar. */
+
+	/*#hamburguesa li:last-child {
+		display: none;
+	}
+
+	/* Con el nav el target (presionamos el botón abrir de hamburguesa), hacemos "entrar" la barra de navegación al cambiar el valor de left a cero. También ocultamos el botón abrir y mostramos el de cerrar. */
+
+	/*nav:target #barra {
+		left: 0;
+	}
+
+	nav:target #hamburguesa li:first-child {
+		display: none;
+	}
+
+	nav:target #hamburguesa li:last-child {
+		display: block;
+	}*/
+	/*#hamburguesa li {
 		list-style: none;
 		text-indent: -100px;
 		overflow: hidden;
@@ -548,19 +1485,19 @@ input {
 	
 	nav:target #hamburguesa li:last-child {
 		display: block;
-	}
+	}*/
 
 	#contacto > h2 {
 		font-size: 2em;
-		background: blue;
+		background: #67c3ec;
 		padding: 1em 0.3em;
 		color: white;
-
+		border-radius: 25px 25px 0px 0px;
 	}
 	
 	#contacto > aside > form > #envio {
 		display: flex;
-		flex-direction: row-reverse;
+		flex-direction: row;
 		margin: 0em 0em;
 		width: 94%;
 	}
@@ -572,16 +1509,52 @@ input {
 		box-shadow: 0px 15px 22px -9px black;
 		margin: 1em 1em;
 	}
+	#contacto > aside > form > #datos :nth-child(1) input {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > form > #datos :nth-child(2) input {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
 	
-	#bicicletas > h2 {
-		text-align: center;
-		font-size: 2rem;
-		padding: 0.3em;
+	#contacto > aside > form > #datos3 :nth-child(1) input {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > form > #datos3 :nth-child(2) input {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > form > #comentarios :nth-child(1) {
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	
+	#contacto > aside > form > #envio :nth-child(1) {
+		background: green;
+		color: white;
+		border: 1px solid yellow;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	#contacto > aside > form > #envio :nth-child(2) {
+		background: yellow;
+		color: black;
+		border: 1px solid green;
+		box-shadow: 0px 15px 22px -9px black;
 	}
 	
 	#bicicletas > h3 {
 		text-align: center;
-		font-size: 1.7rem;
+		font-family: verdana;
+		font-size: 2rem;
+		padding: 0.3em;
+	}
+	
+	#bicicletas > h4 {
+		text-align: center;
+		font-size: 1.4rem;
+		font-family: 'Roboto', sans-serif;
 		padding: 0.3em;
 	}
 	
@@ -602,14 +1575,16 @@ input {
 	#texto01 {
 		padding: 1.2em 1em;
 		line-height: 1.5em;
-		border-radius: 0px 0px 78px 0px;;
-
+		border-radius: 0px 0px 78px 0px;
+		text-align: justify;
+		margin-bottom: 1em;
 	}
 	
 	#texto01 > div > p > a {
 		border: 2px solid black;
 		padding: .3em 1em;
 		font-size: 1.4em;
+		font-family: 'Roboto', sans-serif;
 		border-radius: 10px;
 		text-decoration: none;
 		color: white;
@@ -625,7 +1600,19 @@ input {
 	#video01 > figure > div > iframe {
 		padding: 1em 1em;
 	}
-	
+	#ecologia {
+		background: #0096ff63;		
+		max-width: 1100px;
+		margin: auto;
+		width: 100%;
+	}
+	#ecologia > #uno > h3{
+		text-align: center;
+		font-family: verdana;
+		font-size: 2em;
+		padding-bottom: 0em;
+		line-height: 1em;
+	}
 	#ecologia > #uno > #texto3 {
 		display: none;
 	} 
@@ -633,6 +1620,7 @@ input {
 		border: 2px solid black;
 		padding: .3em 1em;
 		font-size: 1.4em;
+		font-family: 'Roboto', sans-serif;
 		border-radius: 10px;
 		text-decoration: none;
 		color: white;
@@ -646,7 +1634,8 @@ input {
 	#uno {
 		padding: 1.2em 1em;
 		line-height: 1.5em;
-		border-radius: 0px 0px 78px 0px;;
+		border-radius: 0px 0px 78px 0px;
+		text-align: justify;
 
 	}
 	
@@ -665,9 +1654,11 @@ input {
 	#bicimundo > h3 {
 		padding: .5em .6em;
 		font-size: 2rem;
+		font-family: verdana;
 	}
 	#bicimundo > h2  {
 		font-size: 3em;
+		font-family: verdana;
 		padding: .5em 0.3em;
 		padding-bottom: 0;
 	}
@@ -751,7 +1742,7 @@ input {
 	#bicimundo > #amsterdam > h4{
 		width: 59%;
 		padding: .5em;
-		font-size: 1.3rem;
+		
 	}
 	#bicimundo > #amsterdam > h5{
 		width: 59%;
@@ -789,7 +1780,8 @@ input {
 	
 	
 	footer {
-		height: 15em;
+		display: inline-block;
+		height: 13em;
 		background-color: black;
 		overflow: hidden;
 		color: white;
@@ -800,9 +1792,7 @@ input {
 		display: inline-block;
 		margin: 15px 0px;
 	}
-	footer > div {
-		padding-bottom: 1em;
-	}
+	
 	footer > div > #menu1 >  li {
 		display: inline-block;
 		height: 3em;
@@ -845,11 +1835,48 @@ input {
 	#menu1 li:nth-child(1) a{
 		background-position: -3px -201px;
 	}
-
+	#menu1 li:nth-child(1) a:hover{
+		background-position: -157px -201px;
+	}
 }
 
 
 	
+@media screen and (min-width: 320px) and (max-width: 360px){
+						
+	#bicicletas > h3 {
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1.7rem;
+		padding: 0.3em;
+	}					
+}
 
+@media screen and (min-width: 375px) and (max-width: 520px){
 						
-						
+	#texto01 > div > p > a {				
+		border: 2px solid black;
+		padding: .3em 1em;
+		font-size: 1.4em;
+		border-radius: 10px;
+		text-decoration: none;
+		color: white;
+		background: blue;
+		margin-left: 35%;
+		box-shadow: 0px 15px 22px -9px black;			
+	}
+	
+	#ecologia > #uno > p > a {
+		border: 2px solid black;
+		padding: .3em 1em;
+		font-size: 1.4em;
+		font-family: 'Roboto', sans-serif;
+		border-radius: 10px;
+		text-decoration: none;
+		color: white;
+		background: blue;
+		margin-left: 35%;
+		box-shadow: 0px 15px 22px -9px black;
+	}
+	
+}
