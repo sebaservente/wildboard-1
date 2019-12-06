@@ -10,10 +10,6 @@
 header {
 	background: #67c3ec;
 
-	/* El darle el mismo alto que alto de línea al header logramos 
-	que el texto de la h1 quede centrado. Al ajustar el alto al header
-	el nav no entrará pero no es problema ya que lo vamos a trabajar con
-	posicionamiento. */
 
 	height: 4em;
 	line-height: 4em;
@@ -47,8 +43,8 @@ footer {
 	position: absolute;
 	top: 4em;
 	left: -100%;
-	background: #F36;
-	transition: left .5s ease;
+	background: #67c3ec;
+	transition: left .7s ease;
 }
 
 
@@ -62,17 +58,21 @@ footer {
 #barra li a {
 	text-decoration: none;
 	display: block;
-	background: #F9F;
-	color: black;
+	color: white;
 	text-align: center;
 	line-height: 2em;
 }
-
+#barra li a:hover {
+	border: 1px solid white;
+	border-radius: 10px;
+	box-shadow: 10px 15px 22px -9px white;
+	
+}
 
 textarea {	
 	resize: none;
 	margin: 1em 1em;
-	width: 89%;
+	width: 90%;
 	padding: 1em 1em;
 }
 input {
@@ -82,12 +82,17 @@ input {
     border-radius: 10px;	
 }
 
-#contacto > aside {
+#contacto  {
 	background: linear-gradient(to bottom, #67c3ec, white);
 }
 #principal > h2 {
 		display: none;
 }
+
+
+
+
+
 @media screen and (min-width: 600px) and (max-width: 700px){
 
 	
@@ -110,14 +115,17 @@ input {
 		width: 100%;
 		
 	}
-	#contacto > h2 {
+	#contacto > h2  {
 		font-size: 2em;
 		padding: 0.5em 2.4em;
-		background: #67c3ec;
 		border-radius: 25px 25px 0px 0px;
 		color: white;
 	}
-	#contacto > h2:hover {
+	#contacto > h2 > a {
+		text-decoration: none;
+		color: black;
+	}
+	#contacto > h2 > a:hover {
 		color: #67c3ec;
 		text-shadow: 1px 1px 2px black; 
 	}
@@ -128,11 +136,11 @@ input {
 	}
 	#contacto > aside > div {
 		width:50%;
-		background: #67c3ec;	;
+			
 	}
 	#contacto > aside > form {
 		width: 50%;		
-		background: #67c3ec;	;
+			
 		overflow: hidden;
 	}
 	#contacto > aside > div > iframe {
@@ -144,21 +152,34 @@ input {
 	#contacto > aside > form > #comentarios  {
 		margin-left: 5%;
 	}
-	
+	#contacto > aside > div {
+		width: 80%;
+		margin: 0em 0em;
+		padding: 2em 0.4em;
+		text-align: center;
+		margin-left: -1em;
+		overflow: hidden;
+	}
 }
 
 @media screen and (min-width: 522px) and (max-width: 600px){
-
-	body{
-		background: yellow;
-	}
 	
 	#bicicletas > h3 {
 		font-size: 2.5rem;
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Roboto', sans-serif;	
 	}
+	
+	#bicicletas > h3 > a {
+		text-decoration: none; 
+		color: black;
+	}
+	#bicicletas > h3 > a:hover {
+		color: #67c3ec;
+		text-shadow: 1px 1px 2px black; 
+	}
+	
 	#ecologia {
-		background: #0096ff63;		
+		background: linear-gradient(to bottom, #67c3ec, white);		
 		max-width: 1100px;
 		margin: auto;
 		width: 100%;
@@ -178,11 +199,13 @@ input {
 		font-size: 1.5em;
 		
 	}
-	#ecologia > #uno > h3{
+	#ecologia > #uno > h3  {
 		font-family: verdana;
 		font-size: 2.5em;
 		padding-bottom: 1rem;
 	}
+
+	
 	#ecologia > #uno > p > a {
 		display: none;
 		
@@ -192,7 +215,7 @@ input {
 		height: 258px;
 		border: 2px solid black;
 		border-radius: 10px;
-		background: url(imagenes/0011pc.jpg) no-repeat #0096ff29;
+		background: url(imagenes/0011pc.jpg) no-repeat #fafafa;
 		margin-bottom: 25px;
 		margin-top: 55px;
 		box-shadow: -5px -1px 13px -5px black;
@@ -204,7 +227,7 @@ input {
 		height: 258px;
 		border: 2px solid black;
 		border-radius: 10px;
-		background: url(imagenes/0015pc.jpg) no-repeat #0096ff29;
+		background: url(imagenes/0015pc.jpg) no-repeat #fafafa;
 		margin-bottom: 25px;
 		margin-top: 55px;
 		box-shadow: -5px -1px 13px -5px black;
@@ -215,7 +238,7 @@ input {
 		height: 258px;
 		border: 2px solid black;
 		border-radius: 10px;
-		background: url(imagenes/0013pc.jpg) no-repeat #0096ff29;
+		background: url(imagenes/0013pc.jpg) no-repeat #fafafa;
 		margin-bottom: 25px;
 		margin-top: 55px;
 		box-shadow: -5px -1px 13px -5px black;
@@ -225,7 +248,7 @@ input {
 		height: 258px;
 		border: 2px solid black;
 		border-radius: 10px;
-		background: url(imagenes/0013pc.jpg) no-repeat #0096ff29;
+		background: url(imagenes/0013pc.jpg) no-repeat #fafafa;
 		margin-bottom: 25px;
 		margin-top: 55px;
 		box-shadow: -5px -1px 13px -5px black;
@@ -237,45 +260,21 @@ input {
 		border-radius: 25px 25px 0px 0px;
 		color: white;
 	}
-	#contacto > h2:hover {
-		color: #67c3ec;
-		text-shadow: 1px 1px 2px black; 
+	#contacto > h2 > a {
+		text-decoration: none;
+		color: black;
 	}
-}
-	
-
-/*h1 {
-		background: url(imagenes/logo2.png) no-repeat;
-		height: 2.5em;
-		text-indent: -2050px;
-		overflow: hidden;
-		/*margin-left: 75%;
-	}*/
-
-@media screen and (min-width: 521px) and (max-width: 600px){
-	
-	#contacto > aside {
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%
-	}
-	#contacto > aside > form > #comentarios  {
-		margin-left: 5%;
-	}
-	
-	#contacto > h2 {
-		font-size: 2em;
-		padding: 0.5em 2.4em;
-		background: #67c3ec;
-		border-radius: 25px 25px 0px 0px;
-		color: white;
-	}
-	#contacto > h2:hover {
+	#contacto > h2 > a:hover {
 		color: #67c3ec;
 		text-shadow: 1px 1px 2px black; 
 	}
 	
+	
 }
+	
+
+
+
 
 
 
@@ -317,24 +316,37 @@ input {
 
 	
 	#menu {
-		display: inline-block;
-		width: 70%;
+		display: inline-flex;
+		width: 80%;
 		vertical-align: middle;
 	}
 
 	/* Cambiamos el posicionamiento de la barra de absoluto a static (flujo normal o natural) para que ocupe su lugar dentro del nav, también reseteamos el alto que le dimos en mobile para que ocupe toda la pantalla disponible allí y alineamos el texto a la derecha para correr los botones hacia ese costado. Por último, quitamos el color de fondo para que los botones se integren al header. */
-
+	#barra li a {
+		text-decoration: none;
+		display: block;
+		color: white;
+		border-radius: 10px;
+		text-align: center;
+		line-height: 2em;
+		border: 1px solid silver;
+		box-shadow: 3px 15px 22px -9px black;
+	}
+	#barra li a:hover {
+		color: black;
+		box-shadow: 3px 15px 22px -9px white;
+	}
 	#barra {
 		position: static;
 		height: auto;
-		text-align: right;
+		text-align: left;
 		background: none;
 	}
 
 	/* Ajustamos un nuevo tamaño para los botones en px para que se ubiquen en línea (ya tenían aplicado el display inline-block en mobile para que los podamos poner en línea ahora). También les reseteamos el margen vertical que antes nos servía para separar los botones apilados. Corregimos la alineación del texto de los botones para que no queden a la derecha. */
 
 	#barra li {
-		width: 130px;
+		width: 110px;
 		margin: 0 1em;
 		text-align: center;
 	}
@@ -397,28 +409,42 @@ input {
 	#texto01 > div {
 		width: 80%;
 		padding: 1em 1em;
-		font-size: 1.3em;
-		line-height: 1.3em;
+		font-size: 1.4em;
+		line-height: 1.4em;
 		margin-bottom: 0em;
-		
+		justify-content: center;
 	}
 	#bicicletas > #texto01 > div > p a {
 		display: none;
 	}
 	
-	#bicicletas > h3 {
+	#bicicletas > h3 > a{
 		font-family: 'Roboto', sans-serif;
 		font-size: 2.5rem;
 		padding: 2rem 0.4rem;
 		margin-left: 10.9em;
+		text-decoration: none; 
+		color: black;
+
+	}
+	#bicicletas > h3 > a:hover {
+		color: white;
+		text-shadow: 1px 1px 2px black; 
 
 	}
 	#bicicletas > h4 {
 		font-family: 'Roboto', sans-serif;
 		font-size: 2em;
-		margin-left: 13.6em;
-		padding: 1rem 0.4rem;
+		margin-left: 13.4em;
+		padding: 1em 0.4em;
 	}
+	
+	#bicicletas > h4:hover {
+		color: white;
+		text-shadow: 1px 1px 2px black; 
+	}
+	
+	
 	textarea {
 		resize: none;
 		margin: 1em 6em;
@@ -430,8 +456,7 @@ input {
 		width: 100%;
 	}
 	#ecologia > #dos {
-		display: flex;
-		
+		display: flex;		
 		justify-content: center;
 		width: 100%;
 	}
@@ -441,13 +466,24 @@ input {
 	#ecologia > #uno {
 		padding: 40px;
 		width: 100%;
-		font-size: 1.5em;
-		
+		font-size: 1.4em;
+		line-height: 1.4em;
+		justify-content: center;
 	}
-	#ecologia > #uno > h3{
+	#ecologia > #uno > h3 {
 		font-family: verdana;
-		font-size: 2.5em;
-		padding-bottom: 1rem;
+		font-size: 2em;
+		padding-bottom: 1em;
+	}
+	#ecologia > #uno > h3 > a{		
+		text-decoration: none;
+		color: black;
+	}
+	#ecologia > #uno > h3 > a:hover {
+		color: white;
+		text-shadow: 1px 1px 2px black; 
+	
+		
 	}
 	#ecologia > #uno > p > a {
 		display: none;
@@ -470,7 +506,7 @@ input {
 		height: 258px;
 		border: 2px solid black;
 		border-radius: 10px;
-		background: url(imagenes/0015pc.jpg) no-repeat #0096ff29;
+		background: url(imagenes/0015tb.jpg) no-repeat #0096ff29;
 		margin-bottom: 25px;
 		margin-top: 55px;
 		box-shadow: -5px -1px 13px -5px black;
@@ -481,7 +517,7 @@ input {
 		height: 258px;
 		border: 2px solid black;
 		border-radius: 10px;
-		background: url(imagenes/0013pc.jpg) no-repeat #0096ff29;
+		background: url(imagenes/0003pc.jpg) no-repeat #0096ff29;
 		margin-bottom: 25px;
 		margin-top: 55px;
 		box-shadow: -5px -1px 13px -5px black;
@@ -504,12 +540,22 @@ input {
 		background: linear-gradient(to bottom, white, #67c3ec);
 		
 	}
-
-	#bicimundo > h2  {
-		font-size: 3em;
+	#bicimundo > h3 {
+		font-size: 2em;
 		font-family: verdana;
 		padding: .5em 0.7em;
 		padding-bottom: 0;
+		margin-left: 0.4em;
+	}	
+	#bicimundo > h3 > a {
+		
+		text-decoration: none;
+		color: black;
+	}
+	
+	#bicimundo > h3 > a:hover  {
+		color: white;
+		text-shadow: 1px 1px 2px black; 
 	
 		
 	}
@@ -517,7 +563,7 @@ input {
 		display: flex;
 		flex-direction: column;
 		width: 400px;
-		background: url(imagenes/0009_pc.jpg) no-repeat right white;
+		background: url(imagenes/0009b_pc.jpg) no-repeat right white;
 		height: auto;
 		margin: 1em;
 		margin-left: 50%;
@@ -541,7 +587,7 @@ input {
 		display: flex;
 		flex-direction: column;
 		width: 400px;
-		background: url(imagenes/0009_pc.jpg) no-repeat right white;
+		background: url(imagenes/0012b_pc.jpg) no-repeat right white;
 		height: auto;
 		margin: 1em;
 		margin-left: 30%;
@@ -566,7 +612,7 @@ input {
 		display: flex;
 		flex-direction: column;
 		width: 400px;
-		background: url(imagenes/0009_pc.jpg) no-repeat right white;
+		background: url(imagenes/0014b_pc.jpg) no-repeat right white;
 		height: auto;
 		margin: 1em;
 		border-radius: 10px;
@@ -590,7 +636,7 @@ input {
 		display: flex;
 		flex-direction: column;
 		width: 400px;
-		background: url(imagenes/0009_pc.jpg) no-repeat right white;
+		background: url(imagenes/0001b_pc.jpg) no-repeat right white;
 		height: auto;
 		margin: 1em;
 		margin-left: 30%;
@@ -616,7 +662,7 @@ input {
 		display: flex;
 		flex-direction: column;
 		width: 400px;
-		background: url(imagenes/0009_pc.jpg) no-repeat right white;
+		background: url(imagenes/0010b_pc.jpg) no-repeat right white;
 		height: auto;
 		margin: 1em;
 		margin-left: 50%;
@@ -644,16 +690,20 @@ input {
 		display: flex;
 		flex-direction: column;	
 		width: 100%;
-		
+		background: linear-gradient(to bottom, #67c3ec, white);
 	}
-	#contacto > h2 {
-		font-size: 3em;
+	#contacto > h2  {		
+		font-size: 2em;
 		font-family: verdana;
-		background: #67c3ec;
 		padding: 1em 0.3em;
 		color: white;
+		margin-left: .3em;
 	}
-	#contacto > h2:hover {
+	#contacto > h2 > a  {			
+		text-decoration: none;
+		color: black;
+	}
+	#contacto > h2 > a:hover {
 		color: #67c3ec;
 		text-shadow: 1px 1px 2px black; 
 	}
@@ -759,23 +809,42 @@ input {
 	}
 		
 	#menu1  li:nth-child(2) a{
-		background-position: -107px -201px;
+		background-position: -107px -199px;
 	}
+	#menu1 li:nth-child(2) a:hover{
+		background-position: -107px -148px;
+	}
+	
 	
 	#menu1 li:nth-child(3) a{
 		background-position: -55px -200px;
 	}
+	#menu1 li:nth-child(3) a:hover{
+		background-position: -55px -148px;
+	}
+	
 	
 	#menu1 li:nth-child(4) a{
 		background-position:-205px -201px
 	}
+	#menu1 li:nth-child(4) a:hover{
+		background-position: -205px -149px
+	}
+	
 	
 	#menu1 li:nth-child(5) a{
 		background-position: -157px -201px
 	}
-
+	#menu1 li:nth-child(5) a:hover{
+		background-position: -154px -149px
+	}
+	
+	
 	#menu1 li:nth-child(1) a{
-		background-position: -3px -201px;
+		background-position: -4px -198px;
+	}
+	#menu1 li:nth-child(1) a:hover{
+		background-position: -4px -152px;
 	}
 
 }	
@@ -799,57 +868,15 @@ input {
 		margin: 0 auto;
 	}
 	
-	iframe {
-		width: 80%;
-		height: 100%;
-		border: 0;
-		margin: 2em;
-	}
+	
 	h1 {
 		background: url(imagenes/logo2.png) no-repeat #67c3ec;
 		height: 2.5em;
 		text-indent: -2050px;
 		overflow: hidden;
-		margin-left: 70%;
-	}
-	
-	/*h1 {
-		background: url(imagenes/logo2.png) no-repeat;
-		height: 2.5em;
-		text-indent: -2050px;
-		overflow: hidden;
-		/*margin-left: 60%;
-		vertical-align: middle;
-	}
-	
-		
-	#menu {
-		display: inline-block;
-		width: 70%;
-		vertical-align: middle;
+		margin-left: 75%;
 	}
 
-	#barra {
-		position: absolute;
-		height: auto;
-		background: none;
-		line-height: 4em;
-		margin: 0 auto;
-		width: 100%;
-	}
-	
-	#barra li {
-		width: 130px;
-		margin: 0em 1em;
-		text-align: center;
-	}*/
-	
-	
-	
-	
-	
-	
-	
 	nav {
 		position: absolute;
 		top: 0;
@@ -857,7 +884,7 @@ input {
 		width: 100%;
 	}
 
-	/* Sacamos la viñeta del botón y el texto (del vínculo) para que solo se vea la imagen de la hamburguesa que tendrán como fondo los vínculos. Vamos a generar un botón cuadrado con em como unidad de medida para que pueda agrandarse o achicarse dependiendo de la decisión del usuario en cuanto al tamaño de fuente por default de su browser. Ese tamaño será de 2.5em x 2.5em, entonces como el alto del header es 4em le damos un margen superior de 0.75em para que quede centrado verticalmente. El alto se lo damos al vínculo ya que hará crecer por default al li pero el ancho lo damos acá para limitar el ancho del vínculo que trabajará en bloque en su interior. */
+	
 
 	#hamburguesa li {
 		list-style: none;
@@ -867,7 +894,7 @@ input {
 		width: 2.5em;
 	}
 
-	/* El vínculo es la "cara visible" del botón, por lo que es el que lleva la img de fondo de la hamburguesa. En este caso se lo aplicamos a ambos botones (abrir y cerrar) aunque podrían tener una distinta cada uno (la X de cierre, por ejemplo). Con background-cover hacemos que la img cubra completamente el fondo del botón ya sea que se agranda o achica. */
+	
 
 	#hamburguesa li a {
 		background: url("imagenes/menu.png") no-repeat center center;
@@ -876,13 +903,13 @@ input {
 		height: 2.5em;
 	}
 
-	/* Ocultamos el botón cerrar. */
+
 
 	#hamburguesa li:last-child {
 		display: none;
 	}
 
-	/* Con el nav el target (presionamos el botón abrir de hamburguesa), hacemos "entrar" la barra de navegación al cambiar el valor de left a cero. También ocultamos el botón abrir y mostramos el de cerrar. */
+	
 
 	nav:target #barra {
 		left: 0;
@@ -906,17 +933,32 @@ input {
 		padding: 2%;
 	}
 	#bicicletas > h3 {
-		font-size: 2.5em;
-		padding: 1% 3%;
+		font-size: 2em;
+		padding: 1% 5%;
 		font-family: 'Roboto', sans-serif;
 	}
-	#principal > #bicicletas > h4 {
+	#bicicletas > h3 > a{
+		text-decoration: none;
+		color: black;
+	}
+	#bicicletas > h3 > a:hover {
+		color: white;
+		text-shadow: 1px 1px 2px black;
+	}	
+	#bicicletas > h4 {
 		font-size: 2em;
-		padding: 4% 3%;
+		padding: 4% 5%;
+		
+	}
+	#bicicletas > h4:hover {
+		color: white;
+		text-shadow: 1px 1px 2px black;
 		
 	}
 	#bicicletas > #texto01 {
-		line-height: 1.5em;	
+		font-size: 1.4em;
+		justify-content: center;
+		line-height: 1.4em;	
 		padding: 2em;
 	}
 	
@@ -932,16 +974,40 @@ input {
 		display: none;
 	}
 	
-	#video23 > figcaption {
-		font-size: 2em;
-		padding: 3% 2%;
-		border: 2px solid black;
+	iframe {
+	
+		text-align: center;
+		width: 70%;
+		margin: 2em;
 		border-radius: 20px;
 		box-shadow: 0px 15px 22px -9px black;
-		width: 50%;
+	}
+	#video23 {
+		background: linear-gradient(to bottom, #67c3ec, white);
+	}
+	#video23 > div{
+		text-align: center;
+	}
+	#video23 > figcaption {
+		text-align: center;
+		font-size: 1.4em;
+		text-decoration: none;
+		color: black;
+		padding-top: 1em;
+	}
+	#video23 > figcaption > a {
+		font-family: 'Roboto', sans-serif;
+		font-size: 2em;
+		text-decoration: none;
+		color: black;
+		
+	}
+	#video23 > figcaption a:hover {
+		color: #67c3ec;
+		text-shadow: 1px 1px 2px black; 
 	}
 	#ecologia {
-		background: #0096ff63;		
+			
 		max-width: 1100px;
 		margin: auto;
 		width: 100%;
@@ -954,27 +1020,43 @@ input {
 	#ecologia > #dos > div {
 		margin: 1em;
 	}
+	#ecologia > #dos > :nth-child(3){
+		display: none;
+	}
+	#ecologia > #dos > :nth-child(2){
+		display: none;
+	}
 	#ecologia > #uno {
 		padding: 40px;
 		width: 100%;
-		font-size: 1.5em;
+		font-size: 1.4em;
+		line-height: 1.4em;
 		
-	}
+	}	
 	#ecologia > #uno > h3{
 		font-family: verdana;
-		font-size: 2.5em;
-		padding-bottom: 1rem;
+		font-size: 1.3em;
+		padding-bottom: 1em;
+		line-height: 1.4em;
+	}
+	#ecologia > #uno > h3 > a{
+		text-decoration: none;
+		color: black;
+	}
+	#ecologia > #uno > h3 > a:hover{
+		color: #67c3ec;
+		text-shadow: 1px 1px 2px black; 
 	}
 	#ecologia > #uno > p > a {
 		display: none;
 		
 	}
 	#ecologia > #dos > :nth-child(1){
-		width: 180px;
+		width: 250px;
 		height: 180px;
 		border: 2px solid black;
 		border-radius: 10px;
-		background: url(imagenes/0011pc.jpg) no-repeat #0096ff29;
+		background: url(imagenes/0011tblet.jpg) no-repeat #fafafa;
 		margin-bottom: 25px;
 		box-shadow: -5px -1px 13px -5px black;
 	
@@ -985,7 +1067,7 @@ input {
 		height: 180px;
 		border: 2px solid black;
 		border-radius: 10px;
-		background: url(imagenes/0015pc.jpg) no-repeat #0096ff29;
+		background: url(imagenes/0015pc.jpg) no-repeat #fafafa;
 		margin-bottom: 25px;
 		box-shadow: -5px -1px 13px -5px black;
 	}
@@ -995,16 +1077,16 @@ input {
 		height: 180px;
 		border: 2px solid black;
 		border-radius: 10px;
-		background: url(imagenes/0013pc.jpg) no-repeat #0096ff29;
+		background: url(imagenes/0013pc.jpg) no-repeat #fafafa;
 		margin-bottom: 25px;
 		box-shadow: -5px -1px 13px -5px black;
 	}
 	#ecologia > #dos > :nth-child(4){
-		width: 180px;
+		width: 250px;
 		height: 180px;
 		border: 2px solid black;
 		border-radius: 10px;
-		background: url(imagenes/0013pc.jpg) no-repeat #0096ff29;
+		background: url(imagenes/0013tblet.jpg) no-repeat #fafafa;
 		margin-bottom: 25px;
 		box-shadow: -5px -1px 13px -5px black;
 	}
@@ -1012,23 +1094,32 @@ input {
 	#bicimundo {
 		display: flex;
 		flex-wrap: wrap;
+		background: linear-gradient(to bottom, #fafafa, #67c3ec);
 	}
-
-	#bicimundo > h2  {
-		font-size: 3em;
-		padding: .5em 0.3em;
+	#bicimundo > h3 {
+		font-size: 2em;
+		padding: .5em 1.3em;
 		padding-bottom: 0;
+	}
+	#bicimundo > h3 > a {
+		text-decoration: none;
+		color: black;
+	}
+	#bicimundo > h3 > a:hover{
+		color: #67c3ec;
+		text-shadow: 1px 1px 2px black; 
+		
 	}
 	#bicimundo > #londres{
 		display: flex;
 		flex-wrap: wrap;
 		width: 400px;
-		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		background: url(imagenes/0009_pc.jpg) no-repeat right #fafafa;
 		height: auto;
 		margin: 1em;
 		border-radius: 10px;
 		box-shadow: 0px 15px 22px -9px black;
-		margin-left: 40%;
+		margin-left: 30%;
 	}
 	#bicimundo > #londres > h4{
 		width: 59%;
@@ -1046,12 +1137,13 @@ input {
 	#bicimundo > #rio{
 		display: flex;
 		flex-wrap: wrap;
-		width: 50%;
-		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		width: 400px;
+		background: url(imagenes/0012b_pc.jpg) no-repeat right #fafafa;
 		height: auto;
 		margin: 1em;
 		border-radius: 10px;
 		box-shadow: 0px 15px 22px -9px black;
+		
 	}
 	#bicimundo > #rio > h4{
 		width: 59%;
@@ -1071,12 +1163,12 @@ input {
 		display: flex;
 		flex-wrap: wrap;
 		width: 400px;
-		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		background: url(imagenes/0014b_pc.jpg) no-repeat right #fafafa;
 		height: auto;
 		margin: 1em;
 		border-radius: 10px;
 		box-shadow: 0px 15px 22px -9px black;
-		margin-left: 20%;
+		margin-left: 30%;
 	}
 	#bicimundo > #madrid > h4{
 		width: 59%;
@@ -1096,10 +1188,10 @@ input {
 		display: flex;
 		flex-wrap: wrap;
 		width: 400px;
-		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		background: url(imagenes/0001b_pc.jpg) no-repeat right #fafafa;
 		height: auto;
 		margin: 1em;
-		margin-left: 40%;
+	
 		border-radius: 10px;
 		box-shadow: 0px 15px 22px -9px black;
 
@@ -1125,10 +1217,10 @@ input {
 		display: flex;
 		flex-wrap: wrap;
 		width: 400px;
-		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		background: url(imagenes/0010b_pc.jpg) no-repeat right #fafafa;
 		height: auto;
 		margin: 1em;
-		margin-left: 20%;
+		margin-left: 30%;
 		border-radius: 10px;
 		box-shadow: 0px 15px 22px -9px black;
 	}
@@ -1154,17 +1246,20 @@ input {
 		display: flex;
 		flex-direction: column;	
 		width: 100%;
-		
+		padding: .5em;
+		background: linear-gradient(to bottom, #67c3ec, #fafafa);
 	}
-	
 	#contacto > h2 {
 		font-size: 2em;
-		padding: 0.5em 2.4em;
-		background: #67c3ec;
+		padding: 0.5em 1.4em;	
 		border-radius: 25px 25px 0px 0px;
-		color: white;
+		color: #fafafa;
 	}
-	#contacto > h2:hover {
+	#contacto > h2 > a {
+		text-decoration: none;
+		color: black;
+	}
+	#contacto > h2 > a:hover {
 		color: #67c3ec;
 		text-shadow: 1px 1px 2px black; 
 	}
@@ -1177,7 +1272,8 @@ input {
 	#contacto > aside > form {
 		display: flex;
 		flex-wrap: wrap;
-		width: 100%
+		width: 100%;
+		margin: 0 -.8em;
 	}
 	#contacto > aside > div > iframe {
 		width: 80%;
@@ -1186,33 +1282,36 @@ input {
 		box-shadow: 0px 15px 22px -9px black;
 	}
 	#contacto > aside > div {
-		width: 100%;
+		width: 81%;
 		margin: 0em 0em;
-		padding: 2em 0em;
+		padding: 2em 0.9em;
 		text-align: center;
-
-
-	
+		margin-left: -1em;
+		overflow: hidden;
 	}
 
 	#contacto > aside > form > #datos {
 		display: flex;
 		flex-wrap: nowrap;
-		margin: 1em 4em;
+		margin: 0em 2em;
 	
 	}
 	#contacto > aside > form > #envio {
 		display: flex;
 		flex-wrap: nowrap;
 		width: 46%;
-		margin: 1em 6em;
+		margin: 1em 4em;
 
 	}
 	#contacto > aside > form > #datos3 {
 		display: flex;
 		flex-wrap: nowrap;
-		margin: 1em 4em;
+		margin: 0em 2em;
 	
+	}
+	#contacto > aside > form > #comentarios  {
+		width: 90%;
+		margin-left: -8%;
 	}
 	#contacto > aside > form > #datos :nth-child(1) input {
 		border: 1px solid yellow;
@@ -1231,6 +1330,7 @@ input {
 		border: 1px solid yellow;
 		box-shadow: 0px 15px 22px -9px black;
 	}
+	
 	#contacto > aside > form > #comentarios :nth-child(1) {
 		border: 1px solid yellow;
 		box-shadow: 0px 15px 22px -9px black;
@@ -1285,6 +1385,7 @@ input {
 	footer ul li {
 		display: inline-block;
 		margin: 15px 0px;
+		margin-bottom: 0em;
 	}
 	footer > div > #menu1 >  li {
 		display: inline-block;
@@ -1309,24 +1410,44 @@ input {
 	}
 		
 	#menu1  li:nth-child(2) a{
-		background-position: -107px -201px;
+		background-position: -107px -199px;
 	}
+	#menu1 li:nth-child(2) a:hover{
+		background-position: -107px -148px;
+	}
+	
 	
 	#menu1 li:nth-child(3) a{
 		background-position: -55px -200px;
 	}
+	#menu1 li:nth-child(3) a:hover{
+		background-position: -55px -148px;
+	}
+	
 	
 	#menu1 li:nth-child(4) a{
 		background-position:-205px -201px
 	}
+	#menu1 li:nth-child(4) a:hover{
+		background-position: -205px -149px
+	}
+	
 	
 	#menu1 li:nth-child(5) a{
 		background-position: -157px -201px
 	}
-
-	#menu1 li:nth-child(1) a{
-		background-position: -3px -201px;
+	#menu1 li:nth-child(5) a:hover{
+		background-position: -154px -149px
 	}
+	
+	
+	#menu1 li:nth-child(1) a{
+		background-position: -4px -198px;
+	}
+	#menu1 li:nth-child(1) a:hover{
+		background-position: -4px -152px;
+	}
+
 	
 	
 	
@@ -1338,22 +1459,7 @@ input {
 
 @media screen and (max-width: 520px) {
 
-	/*nav {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		
-	}*/
 	
-	/*iframe {
-		width: 80%;
-		height: 100%;
-		border: 0;
-		margin: 2em;
-		border-radius: 20px;
-		box-shadow: 0px 15px 22px -9px black;
-	}*/
 	h1 {
 		background: url(imagenes/logo2.png) no-repeat #67c3ec;
 		height: 2.5em;
@@ -1401,7 +1507,7 @@ input {
 		width: 100%;
 	}
 
-	/* Sacamos la viñeta del botón y el texto (del vínculo) para que solo se vea la imagen de la hamburguesa que tendrán como fondo los vínculos. Vamos a generar un botón cuadrado con em como unidad de medida para que pueda agrandarse o achicarse dependiendo de la decisión del usuario en cuanto al tamaño de fuente por default de su browser. Ese tamaño será de 2.5em x 2.5em, entonces como el alto del header es 4em le damos un margen superior de 0.75em para que quede centrado verticalmente. El alto se lo damos al vínculo ya que hará crecer por default al li pero el ancho lo damos acá para limitar el ancho del vínculo que trabajará en bloque en su interior. */
+	
 
 	#hamburguesa li {
 		list-style: none;
@@ -1411,7 +1517,7 @@ input {
 		width: 2.5em;
 	}
 
-	/* El vínculo es la "cara visible" del botón, por lo que es el que lleva la img de fondo de la hamburguesa. En este caso se lo aplicamos a ambos botones (abrir y cerrar) aunque podrían tener una distinta cada uno (la X de cierre, por ejemplo). Con background-cover hacemos que la img cubra completamente el fondo del botón ya sea que se agranda o achica. */
+	
 
 	#hamburguesa li a {
 		background: url("imagenes/menu.png") no-repeat center center;
@@ -1420,13 +1526,13 @@ input {
 		height: 2.5em;
 	}
 
-	/* Ocultamos el botón cerrar. */
+	
 
 	#hamburguesa li:last-child {
 		display: none;
 	}
 
-	/* Con el nav el target (presionamos el botón abrir de hamburguesa), hacemos "entrar" la barra de navegación al cambiar el valor de left a cero. También ocultamos el botón abrir y mostramos el de cerrar. */
+	
 
 	nav:target #barra {
 		left: 0;
@@ -1439,10 +1545,6 @@ input {
 	nav:target #hamburguesa li:last-child {
 		display: block;
 	}
-
-
-	
-
 	#contacto > h2 {
 		font-size: 2em;
 		background: #67c3ec;
@@ -1450,7 +1552,13 @@ input {
 		color: white;
 		border-radius: 25px 25px 0px 0px;
 	}
-	#contacto > h2:hover {
+
+	#contacto > h2 > a {
+		
+		text-decoration: none; 
+		color: none;
+	}
+	#contacto > h2 > a:hover {
 		color: #67c3ec;
 		text-shadow: 1px 1px 2px black; 
 	}
@@ -1510,6 +1618,15 @@ input {
 		font-size: 2rem;
 		padding: 0.3em;
 	}
+	#bicicletas > h3 > a  {
+		text-decoration: none;
+		color: black;
+	}
+	
+	#bicicletas > h3 > a:hover {
+		color: #67c3ec;
+		text-shadow: 1px 1px 2px black; 
+	}
 	
 	#bicicletas > h4 {
 		text-align: center;
@@ -1518,20 +1635,7 @@ input {
 		padding: 0.3em;
 	}
 	
-	/*#principal > figure > figcaption {
-		margin-left: 12rem;
-		font-size: 2rem;
-		position: absolute;
-		margin-top: 6.4rem;
-		color: white;
-	}
-	#principal > figure > figcaption:hover {
-		margin-left: 10rem;
-		font-size: 2rem;
-		position: absolute;
-		margin-top: 5.1rem;
-		color: green;
-	}*/
+	
 	#texto01 {
 		padding: 1.2em 1em;
 		line-height: 1.5em;
@@ -1566,12 +1670,22 @@ input {
 		margin: auto;
 		width: 100%;
 	}
-	#ecologia > #uno > h3{
+	#ecologia > #uno > h3 {
 		text-align: center;
 		font-family: verdana;
 		font-size: 2em;
 		padding-bottom: 0em;
 		line-height: 1em;
+	
+	}
+	#ecologia > #uno > h3 > a{
+		
+		text-decoration: none;
+		color: black;
+	}
+	#ecologia > #uno > h3 > a:hover{
+		color: #67c3ec;
+		text-shadow: 1px 1px 2px black; 
 	}
 	#ecologia > #uno > #texto3 {
 		display: none;
@@ -1599,29 +1713,29 @@ input {
 
 	}
 	
-	#uno > h2 {
-		font-size: 1.7rem;
-		padding: 1em 0em;
-	}
-	#uno > h3 {
-		font-size: 1.7rem;
-		padding: 1em 0em;
-	}
 	#bicimundo {
 		display: flex;
 		flex-direction: column;
+		margin-top: 2em;
 	}
-	
-	#bicimundo > h2  {
-		font-size: 3em;
+	#bicimundo > h3	{
+		font-size: 1.5em;
 		font-family: verdana;
-		padding: .5em 0.3em;
-		padding-bottom: 0;
+		text-align: center;
 	}
+	#bicimundo > h3 > a {		
+		text-decoration: none;
+		color: black;
+	}
+	#bicimundo > h3 > a:hover{
+		color: #67c3ec;
+		text-shadow: 1px 1px 2px black; 
+		
+	}	
 	#bicimundo > #londres{
 		display: flex;
 		flex-direction: column;
-		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		background: url(imagenes/0009t_pc.jpg) no-repeat right #0096ff29;
 		height: auto;
 		margin: 1em;
 		border-radius: 10px;
@@ -1643,7 +1757,7 @@ input {
 	#bicimundo > #rio{
 		display: flex;
 		flex-direction: column;
-		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		background: url(imagenes/0012t_pc.jpg) no-repeat right #0096ff29;
 		height: auto;
 		margin: 1em;
 		border-radius: 10px;
@@ -1661,12 +1775,13 @@ input {
 	#bicimundo > #rio > p{
 		width: 57%;
 		padding: 2%;
+		justify-content: center;
 	}
 	
 	#bicimundo > #madrid{
 		display: flex;
 		flex-direction: column;
-		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		background: url(imagenes/0014t_pc.jpg) no-repeat right #0096ff29;
 		height: auto;
 		margin: 1em;
 		border-radius: 10px;
@@ -1689,7 +1804,7 @@ input {
 	#bicimundo > #amsterdam{
 		display: flex;
 		flex-direction: column;
-		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		background: url(imagenes/0001t_pc.jpg) no-repeat right #0096ff29;
 		height: auto;
 		margin: 1em;
 		border-radius: 10px;
@@ -1713,7 +1828,7 @@ input {
 	#bicimundo > #newyork{
 		display: flex;
 		flex-direction: column;
-		background: url(imagenes/0009_pc.jpg) no-repeat right #0096ff29;
+		background: url(imagenes/0010t_pc.jpg) no-repeat right #0096ff29;
 		height: auto;
 		margin: 1em;
 		border-radius: 10px;
@@ -1737,7 +1852,7 @@ input {
 	
 	footer {
 		display: inline-block;
-		height: 13em;
+		
 		background-color: black;
 		overflow: hidden;
 		color: white;
@@ -1773,47 +1888,80 @@ input {
 	}
 		
 	#menu1  li:nth-child(2) a{
-		background-position: -107px -201px;
+		background-position: -107px -199px;
 	}
+	#menu1 li:nth-child(2) a:hover{
+		background-position: -107px -148px;
+	
+	}
+	
 	
 	#menu1 li:nth-child(3) a{
 		background-position: -55px -200px;
 	}
+	#menu1 li:nth-child(3) a:hover{
+		background-position: -55px -148px;
+	}
+	
 	
 	#menu1 li:nth-child(4) a{
 		background-position:-205px -201px
 	}
+	#menu1 li:nth-child(4) a:hover{
+		background-position: -205px -149px
+	}
+	
 	
 	#menu1 li:nth-child(5) a{
 		background-position: -157px -201px
 	}
-
+	#menu1 li:nth-child(5) a:hover{
+		background-position: -154px -149px
+	}
+	
+	
 	#menu1 li:nth-child(1) a{
-		background-position: -3px -201px;
+		background-position: -4px -198px;
 	}
 	#menu1 li:nth-child(1) a:hover{
-		background-position: -157px -201px;
+		background-position: -4px -152px;
 	}
+
 }
-
-
 	
 @media screen and (min-width: 320px) and (max-width: 360px){
-						
-	#bicicletas > h3 {
+			
+
+			
+	#bicicletas > h3  {
 		text-align: center;
 		font-family: 'Roboto', sans-serif;
 		font-size: 1.7rem;
 		padding: 0.3em;
 	}
+			
+	#bicicletas > h3 > a  {
+		text-decoration: none;
+		color: black;
+	}
+	#bicicletas > h3 > a:hover  {
+		color: #67c3ec;
+		text-shadow: 1px 1px 2px black; 
+	}	
+	
+	
+	
+	
 	#contacto > h2 {
-		font-size: 2em;
-		padding: 0.5em 2.4em;
+		font-size: 1.5em;
 		background: #67c3ec;
 		border-radius: 25px 25px 0px 0px;
+	}		
+	#contacto > h2 > a{		
 		color: white;
+		text-decoration: none;
 	}
-	#contacto > h2:hover {
+	#contacto > h2 > a:hover {
 		color: #67c3ec;
 		text-shadow: 1px 1px 2px black; 
 	}	
@@ -1846,13 +1994,17 @@ input {
 		box-shadow: 0px 15px 22px -9px black;
 	}
 	#contacto > h2 {
-		font-size: 1.5em;
-		padding: 0.5em 2.4em;
+		font-size: 2em;
 		background: #67c3ec;
 		border-radius: 25px 25px 0px 0px;
-		color: white;
 	}
-	#contacto > h2:hover {
+	
+	#contacto > h2 > a {
+		
+		color: white;
+		text-decoration: none;
+	}
+	#contacto > h2 > a:hover {
 		color: #67c3ec;
 		text-shadow: 1px 1px 2px black; 
 	}
