@@ -81,7 +81,7 @@ header > .carrito {
 header > .carrito > .paa {
 	color: #fff;
     font-size: 2em;
-    margin-right: -12em;
+    margin-right: -15em;
 }
 header > div{
 	/* background: #3d4242;*/
@@ -112,6 +112,11 @@ header > .barra > ul {
 	display: flex;
     align-items: center;
 	font-size: 2em;
+}
+header > .barra button {
+		
+	display: none;
+
 }
 header > .barra > ul > li {
     list-style: none;
@@ -967,7 +972,7 @@ section #productosAnuncio {
 	width: 100%;
     max-width: 350px;
     max-height: 300px;
-    padding: 1em;
+    /* padding: 1em;*/
 }
 .modal .divVerProducto .divParaMin{
 	width: 100%;
@@ -1093,13 +1098,17 @@ section #productosAnuncio {
     line-height: 0px;
     text-align: center;
     box-shadow: 0px 1px 10px 1px black;
-    width: 52%;
-    height: 1em;
+    width: 39%;
+    height: 7.8em;
     padding: 1em;
-    margin-top: 3em;
-	color: #fff;
+    margin-top: 0.4em;
+    color: #fff;
 }
-
+section .timerTitulos {
+	position: absolute;
+	top: 2.6em;
+	left: 1em;
+}
 /* ----------- final modal banner  --------*/
 /* ----------------- filtro Hombres ----------------*/
 .modalHombre {
@@ -1160,7 +1169,7 @@ section #productosAnuncio {
     color: aquamarine;
     position: absolute;
 	top: 8em;
-    left: 9em;
+    left: 5em;
 	
 }
 .modalHombre .divHombre .divProductos {
@@ -2268,6 +2277,20 @@ footer {
 	main section h2 {
 		font-size: 75px;
 	}
+	header > .barra ul {
+		
+		display: none;
+		height: 25em;
+		flex-direction: column;
+		background: tomato;
+		width: 43%;
+		transition: 3s ease all;
+	}
+	header > .barra button {
+		
+		display: inline-block;
+	
+	}
 	#productos > .divProductos:nth-child(1) {
 	
 		width: 30%;
@@ -2915,34 +2938,48 @@ footer {
 	
 }
 @media screen and (min-width: 400px) and (max-width: 479px) {
+	
+	/*----------------- logo bton carrito ----------------------*/
 	#logo {
 		width: 20%;
 		top: 2%;
-		left: 2%;
+		left: 40%;
 		
 	}
 	
 	header > .carrito > button {
-	
-		width: 6%;
-		margin-right: 3em;
+		width: 11%;
+		margin-right: 2.5em;
 	}
+	
 	header > .carrito > .paDos {
-		width: 39%;
-		margin-top: 0.5em;
-		padding-left: 2em;
-		font-size: 1.4em;
+		width: 46%;
+		margin-top: 4em;
+		padding-left: 12em;
+		font-size: 1.2em;
 	
 	}
 	header > .carrito > .paa {
 		margin-right: -9.5em;
 	}
-	header > .barra > ul {
-		margin-top: 5em;
-		position: relative;
-		margin-left: 8.6em;
-	
+	/*----------------- fin logo bton carrito ----------------------*/
+	/*----------------- menu ----------------------*/
+
+	header > .barra {
+		width: 75%;
+		display: flex;
+		/* flex-wrap: wrap; */
+		flex-direction: column;
+		transition: 3s ease all;
 	}
+
+
+	/* header > .barra > ul {
+	    margin-top: 5em;
+		position: relative;
+		margin-left: 4.8em;
+		transition: 3s ease all;
+	} */
 	header > .barra > ul > li > span {
 		color: #000;
 		font-size: 1.5em;
@@ -2950,6 +2987,49 @@ footer {
 		margin-left: 0em;
 		font-weight: 900;
 	}
+	main section h2 {
+		font-size: 40px;
+		margin-top: 0.3em;
+	}
+	header > .barra ul {
+		
+		display: none;
+		height: 25em;
+		flex-direction: column;
+		background: tomato;
+		width: 100%;
+		/* transition: 3s ease all; */
+		margin-top: 1.2em;
+		margin-left: 0;
+	}
+	header > .barra button {
+		
+		display: inline-block;
+		z-index: 7;
+		width: 4em;
+		height: 5em;
+		border: none;
+		margin-top: 2.6em;
+		cursor: pointer;
+		background: url(../items/menu.png) no-repeat;
+		margin-left: 1em;
+	}
+	header > .barra button:hover {
+		border: none;
+	}
+	header > .barra > ul > li {
+		/* list-style: none; */
+		padding: 1.5em;
+		width: 100%;
+		border-bottom: 2px solid beige;
+		text-align: center;
+	}
+	header > .barra > ul > li:hover {
+		
+		font-size: 1em;
+	
+	}
+	/*----------------- fin del menu ----------------------*/
 	main section h2 {
 		margin-top: 0.3em;
 		font-size: 50px;
@@ -3164,29 +3244,40 @@ footer {
 	#logo {
 		width: 20%;
 		top: 2%;
-		left: 2%;
+		left: 40%;
 		
 	}
 	
 	header > .carrito > button {
-	    width: 11%;
-    	margin-right: 2em;
+		width: 11%;
+		margin-right: 2.5em;
 	}
+	
 	header > .carrito > .paDos {
 		width: 46%;
-		margin-top: 0.5em;
-		padding-left: 2em;
-		font-size: 1.4em;
+		margin-top: 4em;
+		padding-left: 12em;
+		font-size: 1.2em;
 	
 	}
 	header > .carrito > .paa {
 		margin-right: -9.5em;
 	}
-	header > .barra > ul {
+	header > .barra {
+		width: 75%;
+		display: flex;
+		/* flex-wrap: wrap; */
+		flex-direction: column;
+		transition: 3s ease all;
+	}
+
+
+	/* header > .barra > ul {
 	    margin-top: 5em;
 		position: relative;
 		margin-left: 4.8em;
-	}
+		transition: 3s ease all;
+	} */
 	header > .barra > ul > li > span {
 		color: #000;
 		font-size: 1.5em;
@@ -3198,6 +3289,44 @@ footer {
 		font-size: 40px;
 		margin-top: 0.3em;
 	}
+	header > .barra ul {
+		
+		display: none;
+		height: 25em;
+		flex-direction: column;
+		background: tomato;
+		width: 100%;
+		transition: 3s ease all;
+		margin-top: 1.2em;
+		margin-left: 0;
+	}
+	header > .barra button {
+		
+		display: inline-block;
+		z-index: 7;
+		width: 4em;
+		height: 5em;
+		border: none;
+		margin-top: 2.6em;
+		cursor: pointer;
+		background: url(../items/menu.png) no-repeat;
+		margin-left: 1em;
+	}
+	header > .barra > ul > li {
+		/* list-style: none; */
+		padding: 1.5em;
+		width: 100%;
+		border-bottom: 2px solid beige;
+		text-align: center;
+	}
+	header > .barra > ul > li:hover {
+		
+		background: rosybrown;
+		color: #fff;
+	
+	}
+	
+	/* ----------------- fin Menu ------------------- */
 
 	#productos > .divProductos:nth-child(1) {
 	

@@ -250,6 +250,32 @@ section = d[_qs]('section');
 
 // creo el div para los productos
 
+let sentido = 1;
+let anuncio = setInterval(
+    function(){
+        let o = parseFloat(timer_titulos.style.opacity);
+        if (o <= 0){
+            sentido = 1;
+        } else if (o >= 1){
+            sentido = -1;
+        }
+        timer_titulos.style.opacity = o + .1 * sentido;
+    },
+    100
+);
+let timer_titulos = d[_cr]('img');
+timer_titulos.className = 'timerTitulos';
+timer_titulos.src = 'items/Asset1-8.png';
+timer_titulos.alt = 'logo de wildboard';
+timer_titulos.style.width = '15%';
+timer_titulos.style.fontSize = '3em';
+timer_titulos.style.textAlign = 'center';
+timer_titulos.style.padding = '1.5em';
+timer_titulos.style.opacity = 0;
+timer_titulos.style.cursor = 'pointer';
+section.appendChild(timer_titulos);
+
+
 div = d[_cr]('div');
 div.id = 'productos';
 section.appendChild(div);
@@ -258,6 +284,7 @@ msj = d[_cr]('p');
 msj.className = 'mensajeAviso';
 
 let TimerInicio = setTimeout (timerInicio, 500);
+
 
 function timerInicio() {
     let div = d[_cr]('div');
@@ -275,7 +302,10 @@ function timerInicio() {
     TituloBanner.className = 'TituloBanner';
     TituloBanner.innerHTML = 'Bienvenidos';
     divImagenBanner.appendChild(TituloBanner);
-  
+   
+ 
+
+   
     div.appendChild(divImagenBanner);
     let a = d.createElement('a');
     a.href = '#';
@@ -435,8 +465,8 @@ for (let i = 0; i < aProductos.length; i++) {
     }
     // btn seleccion del producto
     btnComprarProducto.onclick = function () {
-        ids = parseInt(this.dataset.id);
-        console.log(`indice ingresado ${ids}`);
+        // ids = parseInt(this.dataset.id);
+        // console.log(`indice ingresado ${ids}`);
 
         valor = this.previousElementSibling.previousElementSibling.lastChild.textContent;
             
@@ -1403,27 +1433,25 @@ function AmpliarMujeres() {
     div.appendChild(a);
 }
 
-let sentido = 1;
-let anuncio = setInterval(
-    function(){
-        let o = parseFloat(timer_titulos.style.opacity);
-        if (o <= 0){
-            sentido = 1;
-        } else if (o >= 1){
-            sentido = -1;
-        }
-        timer_titulos.style.opacity = o + .1 * sentido;
-    },
-    100
-);
-let timer_titulos = d[_cr]('img');
-timer_titulos.src = 'items/Asset1-8.png';
-timer_titulos.alt = 'logo de wildboard';
-timer_titulos.style.width = '20%';
-timer_titulos.style.fontSize = '3em';
-timer_titulos.style.textAlign = 'center';
-timer_titulos.style.padding = '1.5em';
+// function girarTarjeta() {
+//     let tarjetaCredito = d[_qs]('#tarjeta');
+//     tarjetaCredito.classList.toggle('active');
+// }
+let menu = d[_id]('menuBarra');
+menu.onclick = menuBarra;
+let conMneu = 0;
+// let conBtnMenu = 0;
+function menuBarra (){
+    //alert('hey hey menu');
+    let ulMenu = d[_id]('ulMenu');
+    // let bmenu = d[_id]('btonMenu');
+    // let bmujer = d[id]('btonMenuMujer');
+    if (conMneu == 0){
+        ulMenu.style.display = 'flex';
+        conMneu = 1;
+    } else {
+        ulMenu.style.display = 'none';
+        conMneu = 0;
+    }
 
-timer_titulos.style.opacity = 0;
-section.appendChild(timer_titulos);
-
+}
