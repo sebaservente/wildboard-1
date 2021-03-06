@@ -1,0 +1,3433 @@
+/**
+ *	Versión 2.0.0
+ *	-------------
+ */
+@charset "utf-8";
+
+/**
+ *	Fonts
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+
+/**
+ *	First Mobile
+ */
+
+/**	General */
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	line-height: 1;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+
+body {
+	background-image:#ffff;
+	
+}
+
+
+.navbar .navbar-toggler-icon{
+	background: url("../items/menu.png") no-repeat center center 100%;
+	
+}
+.navbar-dark .navbar-toggler-icon {
+   
+    font-size: 2em;
+}
+.navbar-toggler:focus {
+	outline: none;
+}
+/**	Header */
+header {
+	background: black;
+    display: flex;
+    flex-wrap: wrap;
+	height: 10em;
+}
+#logo {
+	width: 8%;
+    height: 93px;
+    background: url(../items/Asset1-81.png) no-repeat;
+    font-size: 0;
+    position: absolute;
+    top: 2%;
+    left: 47%;
+    z-index: 1031;
+}
+
+
+header > .carrito {
+	display: flex;
+    flex-wrap: wrap;
+    z-index: 5;
+    border-radius: 10px;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 2em;
+    position: absolute;
+}
+header > .carrito > .paa {
+	color: #fff;
+    font-size: 2em;
+    margin-right: -12em;
+}
+header > div{
+	/* background: #3d4242;*/
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+	position: relative;
+}
+
+
+/* header > div > p:nth-child(1) {
+	font-size: 2em;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: left;
+    margin-top: -6px;
+    width: 56%;
+    position: absolute;
+    margin-left: 17.5em;
+
+} */
+header > .barra {
+	width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+header > .barra > ul {
+	display: flex;
+    align-items: center;
+	font-size: 2em;
+}
+header > .barra > ul > li {
+    list-style: none;
+    padding: 1em;
+}
+header > .barra > ul > li > span{
+	color: #fff;
+    font-size: 2em;
+    padding: 1em;
+	cursor: pointer
+}
+/*header > div > p:nth-child(1) > span {
+	font-size: 1em;
+	font-weight: 700;
+	
+}
+header > .carrito > p:nth-child(2) {
+	width: 15%;
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-left: 1em;
+}*/
+
+header > .carrito > .paDos {
+	font-size: 2em;
+    font-weight: 700;
+    color: #eba622;
+    /* margin-left: 0.5em; */
+    width: 18%;
+	margin-top: 0.5em;
+}
+header > .carrito > .paDos > span {
+	font-size: 1em;
+	font-weight: 700;
+	color: #eba622;
+	margin-left: .5em;
+	
+}
+header > .carrito > button {
+	margin-top: .25em;
+    border-radius: .5em;
+    border: none;
+    background: #ffff;
+    font-size: 1.2em;
+    color: #121212;
+    cursor: pointer;
+    height: 2.9em;
+    width: 4%;
+    margin-right: 4em;
+}
+#productosAnuncio {
+	background-color: aquamarine;
+}
+#productosAnuncio p {
+	margin: .6em;
+	background-color: aquamarine;
+
+}
+/*header > div > button:hover {
+	border: 1px solid #D4EAF3;
+	background: green;
+	color: white;
+}*/	
+
+/**	Main */
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	/*align-items: flex-start;
+	margin-bottom: 14em;
+	padding: 2em 4em;*/
+}
+
+main section {
+	margin-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main section h2 {
+	/*margin: .4em;
+	font-size: 3.4em;
+	line-height: 1.5;*/
+	padding: .5em;
+	color: #99999985;
+	/*margin: 0 auto;*/
+	text-align: center;
+	font-weight: 700;
+	font: italic bold 76px Georgia, Serif;
+	text-shadow: -4px 3px 0 #6d95eb, -14px 7px 0 #0a0e27;
+}
+section #productosAnuncio {
+	margin-bottom: 4em;
+}
+/*main section p {
+	margin: .4em;
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: 800;
+	text-align: center;
+	padding: .5em;
+	cursor: pointer;
+}
+*/
+#productos {
+
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	/*align-items: flex-start;*/
+}
+#productos > p {
+	width: 100%;
+	height: 100px;
+	background: aquamarine;
+}
+/*------------------ producto nro 1 -----------------*/
+
+#productos > .divProductos:nth-child(1) {
+	box-shadow: 1px 2px 12px -3px #131516;
+    margin: 1.5em;
+    width: 25%;
+}
+#productos > .divProductos:nth-child(1):hover {
+	height: 45.8%;
+	margin-top: 1em;
+}
+#productos > .divProductos:nth-child(1) > .categoria {
+    
+    padding: 0.9em;
+    text-align: center;
+}
+#productos > .divProductos:nth-child(1) > img {
+	width: 100%;
+}
+#productos > .divProductos:nth-child(1)> .descripcionProducto {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#productos > .divProductos:nth-child(1) > .descripcionProducto > h3 {
+	margin-top: 0.5em;
+    margin-left: 0.5em;
+
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1.5;
+    width: 100%;
+	padding: 0.2em;
+}
+#productos > .divProductos:nth-child(1) > .descripcionProducto > p {
+	width: 100%;
+    background: azure;
+    font-size: 2em;
+    margin-left: 0.5em;
+	padding: 0.2em;
+}
+#productos > .divProductos:nth-child(1) > .descripcionProducto > p > span{
+	font-size: 1em;
+}
+#productos > .divProductos:nth-child(1) > .descripcionProducto > .material-icons {
+	width: 30%;
+    background: bisque;
+    /* margin-left: 0em; */
+    padding-bottom: 1em;
+    text-align: center;
+    margin: auto;
+    padding-top: 1em;
+	background: turquoise;
+	cursor: pointer;
+}
+#productos > .divProductos:nth-child(1) > .descripcionProducto >  .material-icons:hover {
+	background: rgb(166, 225, 219);
+	color: #fff
+}
+#productos > .divProductos:nth-child(1) > .descripcionProducto > .btnComprarProducto {
+	width: 70%;
+    background: #007bff;
+	border: none;
+}
+#productos > .divProductos:nth-child(1) > .descripcionProducto > .btnComprarProducto:hover {
+	background: #6d95eb;
+}
+/*-------------producto nro2 -------------------*/
+
+#productos > .divProductos:nth-child(2) {
+	box-shadow: 1px 2px 12px -3px #131516;
+    margin: 1.5em;
+    width: 25%;
+}
+#productos > .divProductos:nth-child(2):hover {
+	height: 45.8%;
+	margin-top: 1em;
+}
+#productos > .divProductos:nth-child(2) > .categoria {
+    
+    padding: 0.9em;
+    text-align: center;
+}
+#productos > .divProductos:nth-child(2) > img {
+	width: 100%;
+}
+#productos > .divProductos:nth-child(2)> .descripcionProducto {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#productos > .divProductos:nth-child(2) > .descripcionProducto > h3 {
+	margin-top: 0.5em;
+    margin-left: 0.5em;
+
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1.5;
+    width: 100%;
+	padding: 0.2em;
+}
+#productos > .divProductos:nth-child(2) > .descripcionProducto > p {
+	width: 100%;
+    background: azure;
+    font-size: 2em;
+    margin-left: 0.5em;
+	padding: 0.2em;
+}
+#productos > .divProductos:nth-child(2) > .descripcionProducto > p > span{
+	font-size: 1em;
+}
+#productos > .divProductos:nth-child(2) > .descripcionProducto > .material-icons {
+	width: 30%;
+    /* margin-left: 0em; */
+    padding-bottom: 1em;
+    text-align: center;
+    margin: auto;
+    padding-top: 1em;
+	background: turquoise;
+	cursor: pointer;
+}
+#productos > .divProductos:nth-child(2) > .descripcionProducto >  .material-icons:hover {
+	background: rgb(166, 225, 219);
+	color: #fff;
+}
+#productos > .divProductos:nth-child(2) > .descripcionProducto > .btnComprarProducto {
+	width: 70%;
+    background: #007bff;
+	border: none;
+}
+#productos > .divProductos:nth-child(2) > .descripcionProducto > .btnComprarProducto:hover {
+	background: #6d95eb;
+}
+/*------------ producto nro3 --------------------*/
+
+#productos > .divProductos:nth-child(3) {
+	box-shadow: 1px 2px 12px -3px #131516;
+    margin: 1.5em;
+    width: 25%;
+}
+#productos > .divProductos:nth-child(3):hover {
+	height: 45.8%;
+	margin-top: 1em;
+}
+#productos > .divProductos:nth-child(3) > .categoria {
+    
+    padding: 0.9em;
+    text-align: center;
+}
+#productos > .divProductos:nth-child(3) > img {
+	width: 100%;
+}
+#productos > .divProductos:nth-child(3)> .descripcionProducto {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#productos > .divProductos:nth-child(3) > .descripcionProducto > h3 {
+	margin-top: 0.5em;
+    margin-left: 0.5em;
+
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1.5;
+    width: 100%;
+	padding: 0.2em;
+}
+#productos > .divProductos:nth-child(3) > .descripcionProducto > p {
+	width: 100%;
+    background: azure;
+    font-size: 2em;
+    margin-left: 0.5em;
+	padding: 0.2em;
+}
+#productos > .divProductos:nth-child(3) > .descripcionProducto > p > span{
+	font-size: 1em;
+}
+#productos > .divProductos:nth-child(3) > .descripcionProducto > .material-icons {
+	width: 30%;
+    background: bisque;
+    /* margin-left: 0em; */
+    padding-bottom: 1em;
+    text-align: center;
+    margin: auto;
+    padding-top: 1em;
+	background: turquoise;
+	cursor: pointer;
+}
+#productos > .divProductos:nth-child(3) > .descripcionProducto >  .material-icons:hover {
+	background: rgb(166, 225, 219);
+	color: #fff;
+}
+#productos > .divProductos:nth-child(3) > .descripcionProducto > .btnComprarProducto {
+	width: 70%;
+    background: #007bff;
+	border: none;
+}
+#productos > .divProductos:nth-child(3) > .descripcionProducto > .btnComprarProducto:hover {
+	background: #6d95eb;
+}
+/*------------- producto nro4 -------------------*/
+
+#productos > .divProductos:nth-child(4) {
+	box-shadow: 1px 2px 12px -3px #131516;
+    margin: 1.5em;
+    width: 25%;
+}
+#productos > .divProductos:nth-child(4):hover {
+	height: 45.8%;
+	margin-top: 1em;
+}
+#productos > .divProductos:nth-child(4) > .categoria {
+    
+    padding: 0.9em;
+    text-align: center;
+}
+#productos > .divProductos:nth-child(4) > img {
+	width: 100%;
+}
+#productos > .divProductos:nth-child(4)> .descripcionProducto {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#productos > .divProductos:nth-child(4) > .descripcionProducto > h3 {
+	margin-top: 0.5em;
+    margin-left: 0.5em;
+
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1.5;
+    width: 100%;
+	padding: 0.2em;
+}
+#productos > .divProductos:nth-child(4) > .descripcionProducto > p {
+	width: 100%;
+    background: azure;
+    font-size: 2em;
+    margin-left: 0.5em;
+	padding: 0.2em;
+}
+#productos > .divProductos:nth-child(4) > .descripcionProducto > p > span{
+	font-size: 1em;
+}
+#productos > .divProductos:nth-child(4) > .descripcionProducto > .material-icons {
+	width: 30%;
+    background: bisque;
+    /* margin-left: 0em; */
+    padding-bottom: 1em;
+    text-align: center;
+    margin: auto;
+    padding-top: 1em;
+	background: turquoise;
+	cursor: pointer;
+}
+#productos > .divProductos:nth-child(4) > .descripcionProducto >  .material-icons:hover {
+	background: rgb(166, 225, 219);
+	color: #fff;
+}
+#productos > .divProductos:nth-child(4) > .descripcionProducto > .btnComprarProducto {
+	width: 70%;
+    background: #007bff;
+	border: none;
+}
+#productos > .divProductos:nth-child(4) > .descripcionProducto > .btnComprarProducto:hover {
+	background: #6d95eb;
+}
+/*------------- producto nro5 -------------------*/
+
+#productos > .divProductos:nth-child(5) {
+	box-shadow: 1px 2px 12px -3px #131516;
+    margin: 1.5em;
+    width: 25%;
+}
+#productos > .divProductos:nth-child(5):hover {
+	height: 45.8%;
+	margin-top: 1em;
+}
+#productos > .divProductos:nth-child(5) > .categoria {
+    
+    padding: 0.9em;
+    text-align: center;
+}
+#productos > .divProductos:nth-child(5) > img {
+	width: 100%;
+}
+#productos > .divProductos:nth-child(5)> .descripcionProducto {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#productos > .divProductos:nth-child(5) > .descripcionProducto > h3 {
+	margin-top: 0.5em;
+    margin-left: 0.5em;
+
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1.5;
+    width: 100%;
+	padding: 0.2em;
+}
+#productos > .divProductos:nth-child(5) > .descripcionProducto > p {
+	width: 100%;
+    background: azure;
+    font-size: 2em;
+    margin-left: 0.5em;
+	padding: 0.2em;
+}
+#productos > .divProductos:nth-child(5) > .descripcionProducto > p > span{
+	font-size: 1em;
+}
+#productos > .divProductos:nth-child(5) > .descripcionProducto > .material-icons {
+	width: 30%;
+    background: bisque;
+    /* margin-left: 0em; */
+    padding-bottom: 1em;
+    text-align: center;
+    margin: auto;
+    padding-top: 1em;
+	background: turquoise;
+	cursor: pointer;
+}
+#productos > .divProductos:nth-child(5) > .descripcionProducto >  .material-icons:hover {
+	background: rgb(166, 225, 219);
+	color: #fff;
+}
+#productos > .divProductos:nth-child(5) > .descripcionProducto > .btnComprarProducto {
+	width: 70%;
+    background: #007bff;
+	border: none;
+}
+#productos > .divProductos:nth-child(5) > .descripcionProducto > .btnComprarProducto:hover {
+	background: #6d95eb;
+}
+
+/*------------- producto nro6 -------------------*/
+
+#productos > .divProductos:nth-child(6) {
+	box-shadow: 1px 2px 12px -3px #131516;
+    margin: 1.5em;
+    width: 25%;
+}
+#productos > .divProductos:nth-child(6):hover {
+	height: 45.8%;
+	margin-top: 1em;
+}
+#productos > .divProductos:nth-child(6) > .categoria {
+    
+    padding: 0.9em;
+    text-align: center;
+}
+#productos > .divProductos:nth-child(6) > img {
+	width: 100%;
+}
+#productos > .divProductos:nth-child(6)> .descripcionProducto {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#productos > .divProductos:nth-child(6) > .descripcionProducto > h3 {
+	margin-top: 0.5em;
+    margin-left: 0.5em;
+
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1.5;
+    width: 100%;
+	padding: 0.2em;
+}
+#productos > .divProductos:nth-child(6) > .descripcionProducto > p {
+	width: 100%;
+    background: azure;
+    font-size: 2em;
+    margin-left: 0.5em;
+	padding: 0.2em;
+}
+#productos > .divProductos:nth-child(6) > .descripcionProducto > p > span{
+	font-size: 1em;
+}
+#productos > .divProductos:nth-child(6) > .descripcionProducto > .material-icons {
+	width: 30%;
+    background: bisque;
+    /* margin-left: 0em; */
+    padding-bottom: 1em;
+    text-align: center;
+    margin: auto;
+    padding-top: 1em;
+	background: turquoise;
+	cursor: pointer;
+}
+#productos > .divProductos:nth-child(6) > .descripcionProducto >  .material-icons:hover {
+	background: rgb(166, 225, 219);
+	color: #fff;
+}
+#productos > .divProductos:nth-child(6) > .descripcionProducto > .btnComprarProducto {
+	width: 70%;
+    background: #007bff;
+	border: none;
+}
+#productos > .divProductos:nth-child(6) > .descripcionProducto > .btnComprarProducto:hover {
+	background: #6d95eb;
+}
+
+/*------------- fin productos -------------------*/
+#btn2 {
+	background-color: red;
+}
+#productos > div button {
+	
+	border-radius: .2em;
+    border: 1px solid #D4EAF3;
+    padding: 0 .5em;
+    font-size: 2.2em;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: center;
+    color: #D4EAF3;
+    cursor: pointer;
+}
+
+
+#productos > div button:hover {
+	border: 1px solid #1A4A5E;
+	background: #D4EAF3;
+	color: #1A4A5E;	
+}
+
+.modal .divFormularioPago .contenedor {
+	/*background: #3ab15e; */
+    width: 90%;
+    height: 10%;
+    max-width: 1000px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 2em; */
+    /* margin: auto; */
+    margin-left: 5em;
+}
+/*----------tarjeta-------------*/
+
+.modal .divFormularioPago .contenedor .tarjeta {
+	width: 100%;
+	max-width: 550px;
+	position: relative;
+	color: #fff;
+	transition: .3s ease all;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	cursor: pointer;
+	z-index: 2;
+	/*background: #73a0b7;*/
+}
+.modal .divFormularioPago .contenedor .tarjeta.active {
+	transform: rotateY(180deg);
+}
+
+.modal > .divFormularioPago > .contenedor > .tarjeta > div{
+	padding: 30px;
+	border-radius: 15px;
+	min-height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 10px 10px 0 rgba(90, 116, 148, 0.3);
+	
+}
+
+/*--------------------tarjeta delantera---------------------------*/
+
+.modal .divFormularioPago .contenedor .tarjeta .delantera {
+	width: 100%;
+	background-image: url(../items/bg-tarjeta/bg-tarjeta-02.jpg);
+	background-size: cover;
+}
+.modal .divFormularioPago .contenedor .tarjeta .delantera .logoMarca {
+	text-align: right;
+	min-height: 50px;
+}
+.modal .divFormularioPago .contenedor .tarjeta .delantera .logoMarca img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 80px;
+}
+.modal .divFormularioPago .contenedor .tarjeta .delantera .imgChip{
+	width: 100%;
+	max-width: 50px;
+	margin-bottom: 20px;	
+}
+.delantera .divGrupo .label{
+	font-size: 1.5em;
+	color: #7d8994;
+	margin-bottom: 5px;	
+}
+
+.delantera .divGrupo .numero,
+.delantera .divGrupo .nombre,
+.delantera .divGrupo .expiracion {
+	color: #fff;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.delantera .divFlexbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+/*--------------------tarjeta trasera---------------------------*/
+
+
+.modal .divFormularioPago .contenedor .tarjeta .trasera {
+	width: 100%;
+	background-image: url(../items/bg-tarjeta/bg-tarjeta-02.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+.contenedor .tarjeta .trasera .divBarraMagnetica {
+	height: 40px;
+	background: #000;
+	width: 100%;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+
+.contenedor .tarjeta .trasera .divDatos {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+.trasera .divDatos .divGrupo .label{
+	font-size: 1.5em;
+	color: #fff;
+	margin-bottom: 5px;	
+}
+.contenedor > .tarjeta > .trasera > .divDatos > p {
+	margin-bottom: 5px;
+}
+.contenedor > .tarjeta > .trasera > .divDatos > #firma {
+	width: 70%;
+
+}
+.contenedor > .tarjeta > .trasera > .divDatos > #firma > .firma {
+	height: 40px;
+	background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px);
+	
+}
+.contenedor > .tarjeta > .trasera > .divDatos > .divGrupo > .firma > p {
+	line-height: 40px;
+	font-family: 'Liu Jian Mao Cao', cursive;
+	color: #000;
+	font-size: 2.5em;	
+	padding: 0 10px;
+	text-transform: capitalize;
+}
+
+.contenedor > .tarjeta > .trasera > .divDatos > #ccv {
+	width: 20%;
+
+
+}
+.contenedor > .tarjeta > .trasera > .divDatos > #ccv > .ccv {
+	background: #fff;
+    height: 40px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.contenedor > .tarjeta > .trasera > .leyenda {
+	font-size: 1.2em;
+	line-height: 24px;
+
+}
+.contenedor > .tarjeta > .trasera > a {
+	font-size: 1.2em;
+	color: #fff;
+
+}
+/*----------------- boton formulario abrir cerrar ----------------------*/
+
+.contenedor > .botonTarjeta > .material-icons {
+	width: 50px;
+	height: 50px;
+	font-size: 2.5em;
+	line-height: 20px;
+	background: #2364d2;
+	color: #fff;
+	position: relative;
+	top: -25px;
+	z-index: 3;
+	border-radius: 100%;
+	box-shadow: -5px 4px 8px rgba(24, 56, 182, 0.4);
+	padding: 5px;
+	transition: all .2s ease;
+	border: none;
+	cursor: pointer;
+}
+.contenedor > .botonTarjeta > .material-icons:hover {
+	background: #1850b1;
+}
+.contenedor > .botonTarjeta > .material-icons.active {
+	transform: rotate(45deg);
+}
+
+/* ------------ formulario con tarjeta -------------*/
+
+.modal .divFormularioPago .contenedor .formIngresoPago {
+	background: #fff;
+    width: 100%;
+    padding: 141px 30px 30px 30px;
+    max-width: 700px;
+    border-radius: 10px;
+    position: relative;
+    top: -170px;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path .3s ease-out;
+    height: 65.6vh;
+}
+.modal .divFormularioPago .contenedor .formIngresoPago.active {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.divFormularioPago .contenedor .formIngresoPago label {
+	display: block;
+	color: #7d8994;
+	margin-bottom: 5px;
+	font-size: 1em;
+}
+.divFormularioPago .contenedor .formIngresoPago input,
+.divFormularioPago .contenedor .formIngresoPago select,
+.divFormularioPago .contenedor .formIngresoPago .buttonEnviarPago {
+	border: 2px solid #ced6e0;
+	font-size: 1.1em;
+	height: 35px;
+	width: 100%;
+	padding: 5px 12px;
+	transition: .3s ease all;
+	border-radius: 5px;	
+}
+.divFormularioPago .contenedor .formIngresoPago input:hover,
+.divFormularioPago .contenedor .formIngresoPago select:hover {
+	border: 2px solid #93bded;
+}
+.divFormularioPago .contenedor .formIngresoPago input:focus,
+.divFormularioPago .contenedor .formIngresoPago select:focus {
+	outline: rgb(4,4,4);
+	box-shadow: 1px 7px 10px -5px rgb(90, 116, 148, 0.3);
+}
+.divFormularioPago > .contenedor > .formIngresoPago > div {
+	width: 100%;
+}
+.divFormularioPago .contenedor .formIngresoPago > div > input {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.divFormularioPago .contenedor .formIngresoPago .divFlexbox  {
+	display: flex;
+	justify-content: space-between;
+}
+.divFlexbox .divGrupoExpira .divFlexbox .divGrupoSelect{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	position: relative;
+}
+.divFlexbox .divGrupoExpira .divFlexbox .divGrupoSelect select{
+	width: 100%;
+	margin-right: 15px;
+
+}
+
+.divFormularioPago .contenedor .formIngresoPago .divFlexbox .divGrupoExpira {
+	width: 100%;
+}
+.divFormularioPago > .contenedor > .formIngresoPago > .divFlexbox > .divGrupoCcv {
+	min-width: 100px;
+	padding-left: 3px;
+}
+
+.divFormularioPago .contenedor .formIngresoPago .buttonEnviarPago {
+	border: none;
+	padding: 0.5em;
+	margin-top: 1.3em;
+	font-size: 1.3em;
+	color: #fff;
+    background: #007bff;
+	box-shadow: 2px 2px 10px 0px rgba(0, 85, 212, 0.4);
+	cursor: pointer;
+}
+
+.divFormularioPago .contenedor .formIngresoPago .buttonEnviarPago:hover {
+	color: #fff;
+	background: rgb(166, 225, 219);
+	box-shadow: 0 2px 2px 0 #131516;
+
+}
+
+/*.carrito > p:nth-child(1) {
+    color: #fff;
+    background: bisque;
+    width: 10%;
+}*/
+
+.carrito > p > .material-icons {
+	padding: 0.3em;
+	position: absolute;
+}
+/* ----------ventana modal ver --------------- */
+
+
+.modal .divVerProducto {
+	width: 55%;
+    height: auto;
+    padding-top: 2em;
+	padding: 0;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.modal .divVerProducto #foto{
+	width: 100%;
+    max-width: 350px;
+    max-height: 300px;
+    padding: 1em;
+}
+.modal .divVerProducto .divParaMin{
+	width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5em;
+   
+}
+
+.modal .divVerProducto .divParaMin img{
+	width: 10em;
+    height: 7em;
+}
+.modal .divVerProducto .divParaMin #anterior,
+.modal .divVerProducto .divParaMin #siguiente {
+	width: 30px;
+	height: 30px;
+}
+/* a borrar*/
+.modal .divVerProducto .divContenerInfo  {
+	display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #999;
+}
+.modal .divVerProducto .divContenerInfo .h3Ver {
+	font-size: 2em;
+    font-weight: 800;
+    /* padding-top: 1.5em; */
+    width: 100%;
+    /* margin: 0.5em; */
+    padding: 0.5em;
+    text-align: center;
+    background: aqua;
+}
+.modal .divVerProducto .divContenerInfo p {
+	margin: auto;
+    color: #121212;
+    text-align: justify;
+    line-height: 20px;
+    width: 100%;
+    padding: 1em;
+    font-size: 1.3em;
+}
+
+.modal .divVerProducto .divContenerInfo .h4Ver {
+	font-size: 2em;
+    /* margin-top: 1em; */
+    background: lightcyan;
+    padding: 1em;
+}
+.modal .divVerProducto .divParaMin .divParaFotoMin{
+    display: flex;
+    margin: 0.5em;
+}
+
+
+
+
+
+/*.modal .divVerProducto .h5Ver {
+	grid-column: 6/ -1;
+    grid-row: 8 / 9;
+    margin-top: 1em;
+    border: 1px solid black;
+    text-align: center;
+}*/
+
+/* ----------- final ver producto -------- */
+/* ----------- modal banner ---------------*/
+.modalTimer {
+	position: fixed;
+    z-index: 1032;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(14, 14, 14, 0.9);
+   /*width: 70%;
+    height: 70%;*/
+    margin: auto;
+}
+.modalTimer > a {
+	position: fixed;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+    right: 0;
+	border-radius: 1em;
+	width: 2em;
+	height: 2em;
+	background-color: rgba(255,255,255,.9);
+	font-size: 1em;
+	font-weight: 400;
+	text-align: center;
+	color: #1A4A5E;
+	text-decoration: none;
+}
+
+.modalTimer > a:hover {
+	background-color: #1A4A5E;
+	color: rgba(255,255,255,.9);
+}
+.modalTimer .divImagenBanner  {
+    display: flex;
+    justify-content: center;
+}
+.modalTimer .divImagenBanner img {
+	width: 80%;
+}
+.modalTimer .divImagenBanner .TituloBanner {
+	position: absolute;
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 0px;
+    text-align: center;
+    box-shadow: 0px 1px 10px 1px black;
+    width: 52%;
+    height: 1em;
+    padding: 1em;
+    margin-top: 3em;
+	color: #fff;
+}
+
+/* ----------- final modal banner  --------*/
+/* ----------------- filtro Hombres ----------------*/
+.modalHombre {
+	position: fixed;
+	z-index: 1032;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.9);
+	
+}
+.modalHombre > a {
+	position: fixed;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 1em;
+	right: 1em;
+	border-radius: 1em;
+	width: 2em;
+	height: 2em;
+	background-color: rgba(255,255,255,.9);
+	font-size: 1em;
+	font-weight: 400;
+	text-align: center;
+	color: #1A4A5E;
+	text-decoration: none;
+}
+
+.modalHombre > a:hover {
+	background-color: #1A4A5E;
+	color: rgba(255,255,255,.9);
+}
+.modalHombre .divHombre  {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1em;
+	background: #D4EAF3;
+	width: 90%;
+	max-width: 1000px;
+}
+.modalHombre .divHombre .divFotHombres {
+	width: 100%;
+}
+.modalHombre .divHombre .divFotHombres img{
+	width: 99%;
+	
+}
+.modalHombre .divHombre .divFotHombres .h2Hombre{
+	width: 7%;
+    color: aquamarine;
+    position: absolute;
+	top: 8em;
+    left: 9em;
+	
+}
+.modalHombre .divHombre .divProductos {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1em;
+	background: #131415;
+	width: 33%;
+}
+.modalHombre .divHombre .divProductos img {
+	margin: auto;
+	width: 100%;
+}
+.modalHombre .divHombre .divProductos h3 {
+	margin: auto;
+	width: 100%;
+	color: #fff;
+
+}
+.modalHombre .divHombre .divProductos p {
+	font-size: 2em;
+    width: 100%;
+    margin-left: 0.9em;
+	color: #fff;
+}
+/*.modalHombre .divHombre .divProductos:nth-child(2) {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1em;
+	background: #eba622;
+}
+.modalHombre .divHombre .divProductos:nth-child(3) {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1em;
+	background: #6d95eb;
+}*/
+
+.modal {
+	position: fixed;
+	z-index: 1032;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.9);
+	
+}
+
+.modal > a {
+	position: fixed;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 1em;
+	right: 1em;
+	border-radius: 1em;
+	width: 2em;
+	height: 2em;
+	background-color: rgba(255,255,255,.9);
+	font-size: 1em;
+	font-weight: 400;
+	text-align: center;
+	color: #1A4A5E;
+	text-decoration: none;
+}
+
+.modal > a:hover {
+	background-color: #1A4A5E;
+	color: rgba(255,255,255,.9);
+}
+
+.modal div h5 {
+	font-size: 2em;
+    color: #1A4A5E;
+    /*background-color: #3333;*/
+    width: 100%;
+    padding: 0.3em;
+}
+.modal .div2 .divBotones .botonFinCompra {
+	border: none;
+    border-radius: 5px;
+    width: 25%;
+    color: #fff;
+    background: #007bff;
+    padding: .4em;
+    margin: 1em;
+	
+}
+.modal .div2 .divBotones .botonFinCompra:hover {
+	color: #fff;
+	background: rgb(166, 225, 219);
+	box-shadow: 0 2px 2px 0 #131516;
+	
+}
+.modal .div2 .divBotones .LimpiarCompra {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 1em;
+	text-align: justify;
+}
+.modal div .parrafoValor {
+	font-size: 1em;
+    padding-left: 4.6em;
+}
+.modal div .parrafoItems {
+	font-size: 1em;
+    padding-left: 3em;
+}
+.modal div .ulCarrito {
+	/*background-color: rgb(219, 215, 215);*/
+	padding: .5em;
+}
+.modal div .ulCarrito li{
+	display: flex;
+	justify-content: space-between;
+}
+/*.modal p {
+	font-size: 1.4em;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: right;
+    color: #fafafa;
+    width: 30%;*/
+    /* padding: 0.3em;
+   background-color: #1a4a5e;
+}*/
+/* --------- pantalla Ampliar ----------- 
+.modal .div2 {
+	background-color: yellow;
+	display: grid;
+}*/
+/*.modal .div2 .carrito {
+	color: #eba622;
+}*/
+.modal > .div2 > #divValores {
+	display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    width: 100%;
+    background: antiquewhite;
+	
+}
+
+.modal .div2 #divValores h3{
+	width: 50%;
+    text-align: right;
+    padding: 0.5em;
+}
+.modal .div2 #divValores h4{
+	width: 30%;
+    text-align: center;
+    padding: 0.5em;
+    margin-top: 0.3em;
+}
+/*.modal .div2 .divPropaganda {
+	background: darkcyan;
+}
+.modal .div2 .divPropaganda img {
+	width: 80%;
+}*/
+.modal .div2 .divBotones {
+	width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+	padding: 0.5em;
+}
+
+.modal > .div2 > .texCarritoVacio {
+    width: 100%;
+    font-size: 2.5em;
+    color: #121212;
+    margin: auto;
+    text-align: center;
+	padding: 1em;
+}
+.modal > .div2 > .texCarritoVacioA {
+	width: 100%;
+    font-size: 2.5em;
+    color: #121212;
+    margin: auto;
+    text-align: center;
+	padding: 1em;
+}
+.modal > .div2 > .texCarritoVacioB {
+	grid-column:  1 / -1;
+	grid-row: 1 / -1;
+	color: #121212;
+	font-size: 2.5em;
+	text-align: center;
+	width: 100%;
+	padding: 1em;
+
+}
+.modal .div2 .divMostrarCarrito {
+	   
+		width: 100%;
+		display: flex;
+		grid-column: 1 / -1;
+		grid-row: auto;
+		border-bottom: 1px solid #999;
+		padding: 0.5em;
+}
+.modal .div2 .divMostrarCarrito .ulCarrito{
+	display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+.modal .div2 .divMostrarCarrito button{
+	background: rgb(166, 225, 219);
+    width: 5%;
+    height: 1.5em;
+    font-size: 2em;
+    margin-top: 0.4em;
+    box-shadow: -2px 2px 4px 0px #121212;
+	color: #131516;
+    display: flex;
+    justify-content: center;
+}
+.modal .div2 .divMostrarCarrito button:hover{
+	color: #fff;
+}
+.modal .div2 {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 75%;
+	max-width: 1000px;
+    height: auto;
+	background: aliceblue;
+	/*padding: 0.5em;*/
+}
+.modal .div2 .carrito {
+	background: turquoise;
+    width: 100%;
+    font-size: 3em;
+    padding: 0.5em;
+    color: rgb(31, 30, 30);
+    font-weight: 800;
+	text-align: center;
+}
+.modal .div2 .divHombres {
+	background-color: #eba622;
+}
+
+/*-----------pagar producto--------*/
+.modal .divFormularioPago {
+	background: aliceblue;
+    width: 75%;
+	height: 100vh;
+	max-width: 1000px;
+    margin: auto;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal .divFormularioPago h2 {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    color: black;
+	width: 100%;
+    font-size: 3em;
+    font-weight: 800;
+    background: aqua;
+}	
+.modal .divFormularioPago .formIngresoPago  {
+	width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #73a0b7;
+    margin: 1em;
+    padding-bottom: 2em;
+	margin: auto;
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoTitular {
+	width: 100%;
+    padding: 0em 1em;
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoTitular .labelTitular {
+    display: block;
+    font-weight: 800;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+	color: rgb(242 247 247);
+	margin: auto;
+	width: 100%;
+	
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoTitular .inputTitular {
+	width: 100%;
+    /* background-color: #fff; */
+    border: 1px solid rgb(5, 238, 238);
+    border-radius: 3px;
+    height: 28px;
+    line-height: 20px;
+    padding: 1em;
+    transition: .3s ease all;
+    /* background: url(../res/favicon02.ico) 10% center; */
+    background: black;
+    margin-bottom: 1.3em;
+    cursor: pointer;
+    color: rgb(5, 238, 238);
+    font-size: 1.2em;
+
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoTitular .inputTitular::placeholder {
+
+    color: rgb(157, 233, 233);
+    font-size: 1.2em;
+
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoNumero {
+	width: 100%;
+    padding: 1em;
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoNumero .labelNumero {
+
+     display: block;
+    font-weight: 800;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+	color: rgb(242 247 247);
+	margin: auto;
+	width: 100%;
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoNumero .inputNumero {
+	width: 100%;
+    /* background-color: #fff; */
+    border: 1px solid rgb(5, 238, 238);
+    border-radius: 3px;
+    height: 28px;
+    line-height: 20px;
+    padding: 1em;
+    transition: .3s ease all;
+    /* background: url(../res/favicon02.ico) 10% center; */
+    background: black;
+    margin-bottom: 1.3em;
+    cursor: pointer;
+    color: rgb(5, 238, 238);
+    font-size: 1.2em;
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoNumero .inputNumero::placeholder {
+	color: rgb(157, 233, 233);
+    font-size: 1.2em;
+
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento {
+	width: 50%;
+    padding: 1em;
+	text-align: center;
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento .labelVencimiento {
+
+     display: block;
+    font-weight: 800;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.3em;
+	color: rgb(242 247 247);
+	margin: auto;
+	width: 100%;
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento .inputVencimiento {
+	width: 100%;
+    /* background-color: #fff; */
+    border: 1px solid rgb(5, 238, 238);
+    border-radius: 3px;
+    height: 25px;
+    line-height: 20px;
+    padding: 0.5em;
+    transition: .3s ease all;
+    /* background: url(../res/favicon02.ico) 10% center; */
+    background: black;
+    margin-bottom: 1.3em;
+    cursor: pointer;
+    color: rgb(5, 238, 238);
+    font-size: 1.2em;
+	text-align: center;
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento .inputVencimiento::placeholder {
+	color: rgb(157, 233, 233);
+    font-size: 1.2em;
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo {
+
+	width: 50%;
+    padding: 1em;
+	text-align: center;
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo .labelCodigo {
+	
+	display: block;
+    font-weight: 800;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.3em;
+	color: rgb(242 247 247);
+	margin: auto;
+	width: 100%;
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo .inputCodigo {
+	width: 100%;
+    /* background-color: #fff; */
+    border: 1px solid rgb(5, 238, 238);
+    border-radius: 3px;
+    height: 25px;
+    line-height: 20px;
+    padding: 0.5em;
+    transition: .3s ease all;
+    /* background: url(../res/favicon02.ico) 10% center; */
+    background: black;
+    margin-bottom: 1.3em;
+    cursor: pointer;
+    color: rgb(5, 238, 238);
+    font-size: 1.2em;
+	text-align: center;
+}
+.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo .inputCodigo::placeholder {
+	color: rgb(157, 233, 233);
+    font-size: 1.2em;
+}
+.modal .divFormularioPago .divCreditos {
+	/*background: antiquewhite;*/
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0em;
+    position: absolute;
+    top: 41em;
+    width: 75%;
+    height: 14em;
+}
+.modal > .divFormularioPago > .mensajeAviso {
+	color: #eba622;
+}
+.modal .divFormularioPago .divCreditos .h3Detalle {
+	width: 100%;
+    font-weight: 900;
+    height: 2em;
+    text-align: center;
+}
+.modal .divFormularioPago .divCreditos .divDatosTitular {
+	width: 50%;
+    /* background: aqua; */
+    box-shadow: 0px 1px 4px -1px #121212;
+    text-align: center;
+    padding: 1em;
+    
+}
+.modal .divFormularioPago .divCreditos .divDatosTitular .h4Titular {
+
+	width: 100%;
+	padding: 0.5em;
+}
+.modal .divFormularioPago .divCreditos .divDatosTitular .parrNombre {
+    width: 100%;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+.modal .divFormularioPago .divCreditos .divDatosTitular .parrPaas {
+	width: 100%;
+    padding: 0.5em;
+    font-size: 1.5em;
+
+}
+.modal .divFormularioPago .buttonPagar {
+	border-color: 1px solid black;
+	border-radius: 5px;
+	width: 100%;
+	background: rgb(166, 225, 219);
+    color: rgb(29, 28, 28);
+	margin: .5em;
+	padding: 0.3em;
+}
+.modal .divFormularioPago .buttonPagar:hover {
+	background: #007bff;
+	color: #fff;
+}
+/*---------fin pagar producto----------*/
+
+/*------- modal formulario--------*/
+
+.modal .divFormulario {
+	width: 90%;
+	max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	background: aliceblue;
+}
+.modal .divFormulario h2 {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    color: black;
+	width: 100%;
+    font-size: 3em;
+    font-weight: 800;
+    background: aqua;
+	
+}
+.modal .divFormulario .mensajeAviso {
+	width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+	padding: 0.5em;
+    
+}
+.modal .divFormularioPago .mensajeAviso {
+	width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    padding: 0.5em;
+	margin-bottom: 0em;
+}
+.modal .divFormulario .mensajeAviso2 {
+	
+	margin-left: 1em;
+	width: 94%;
+}
+.modal .divFormulario .formIngresoUsuario {
+	width: 50%;
+	margin: auto;
+	background: rgb(139 138 138 / 20%);
+	padding: 1em;
+	margin: 3em;
+}
+/* ----------------- div nombre -------------*/
+.modal .divFormulario .formIngresoUsuario .divNombre {
+	width: 100%;
+	position: relative;
+	grid-column:  1 / -1;
+    grid-row: 1 / 2;
+
+}
+.modal .divFormulario .formIngresoUsuario .divNombre .labelNombre {
+    display: block;
+    font-weight: 800;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin: auto;
+	color: #fff;
+}
+.modal .divFormulario .formIngresoUsuario .divVerPassword .labelNombre {
+	display: inline-block;
+    font-weight: 700;
+    cursor: pointer;
+	color: #6d95eb;
+}
+.modal .divFormulario .formIngresoUsuario .divNombre .inputNombre {
+	width: 100%;
+    /* background-color: #fff; */
+	border: 2px solid #ced6e0;
+    border-radius: 5px;
+    font-size: 1.1em;
+    height: 40px;
+    line-height: 20px;
+    padding: 5px 12px;
+	transition: .3s ease all;
+	/*background: url(../res/favicon02.ico) 10% center;*/
+	transition: .3s ease all;
+	margin-bottom: 1.3em;
+	cursor: pointer;
+	color: #131516;
+    
+}
+
+.modal .divFormulario .formIngresoUsuario .divNombre .inputNombre::placeholder {
+	color: #999;
+	font-size: 1.5em;
+}
+.modal .divFormulario .formIngresoUsuario .divNombre .inputNombre:hover {
+	border: 2px solid #93bded;
+
+}
+.modal .divFormulario .formIngresoUsuario .divNombre .inputNombre:focus {
+	/*border: 2px solid #93bded;*/
+	border-radius: 5px;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163 0.4);
+}
+/* -------------foin div nombre ------------*/
+
+/* -------------- div Password -------------*/
+.modal .divFormulario .formIngresoUsuario .divPassword {
+	width: 100%;
+	position: relative;
+	grid-column:  1 / -1;
+    grid-row: 2 / 3;
+}
+.modal .divFormulario .formIngresoUsuario .divVerPassword  {
+	width: 100%;
+	position: relative;
+	grid-column:  1 / -1;
+    grid-row: 4 / 5;
+
+}
+.modal .divFormulario .formIngresoUsuario .divPassword .labelPassword {
+    display: block;
+    font-weight: 800;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin: auto;
+
+}
+.modal .divFormulario .formIngresoUsuario .divPassword .inputPassword {
+	width: 100%;
+    /* background-color: #fff; */
+	border: 2px solid #ced6e0;
+    border-radius: 5px;
+    font-size: 1.1em;
+    height: 40px;
+    line-height: 20px;
+    padding: 5px 12px;
+	transition: .3s ease all;
+	/*background: url(../res/favicon02.ico) 10% center;*/
+	transition: .3s ease all;
+	margin-bottom: 1.3em;
+	cursor: pointer;
+	color: #131516;
+}
+.modal .divFormulario .formIngresoUsuario .divPassword .inputPassword::placeholder {
+	color: #999;
+	font-size: 1.5em;
+}
+.modal .divFormulario .formIngresoUsuario .divPassword .inputPassword:hover {
+	border: 2px solid #93bded;
+
+}
+.modal .divFormulario .formIngresoUsuario .divPassword .inputPassword:focus {
+	
+	border-radius: 5px;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163 0.4);
+}
+/* --------------- fin div password ----------- */
+/* -------------- div Confirmar Password -------------*/
+
+
+.modal .divFormulario .formIngresoUsuario .divConfirmarPassword {
+	width: 100%;
+	position: relative;
+	grid-column:  1 / -1;
+    grid-row: 3 / 4;
+}
+.modal .divFormulario .formIngresoUsuario .divVerPassword  {
+    width: 100%;
+    display: flex;
+    padding: .5em;
+}
+.modal .divFormulario .formIngresoUsuario .divConfirmarPassword .labelConfirmarPassword {
+	display: block;
+    font-weight: 800;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin: auto;
+
+}
+.modal .divFormulario .formIngresoUsuario .divConfirmarPassword .inputConfirmarPassword {
+	width: 100%;
+    /* background-color: #fff; */
+	border: 2px solid #ced6e0;
+    border-radius: 5px;
+    font-size: 1.1em;
+    height: 40px;
+    line-height: 20px;
+    padding: 5px 12px;
+	transition: .3s ease all;
+	/*background: url(../res/favicon02.ico) 10% center;*/
+	transition: .3s ease all;
+	margin-bottom: 1.3em;
+	cursor: pointer;
+	color: #131516;
+}
+.modal .divFormulario .formIngresoUsuario .divConfirmarPassword .inputConfirmarPassword::placeholder {
+	color: #999;
+	font-size: 1.5em;
+}
+.modal .divFormulario .formIngresoUsuario .divConfirmarPassword .inputConfirmarPassword:hover {
+	border: 2px solid #93bded;
+
+}
+.modal .divFormulario .formIngresoUsuario .divConfirmarPassword .inputConfirmarPassword:focus {
+	
+	border-radius: 5px;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163 0.4);
+}
+/* --------------- fin div apellido ----------- */
+/*.modal .divFormulario label {
+	padding: .5em;
+}*/
+.modal .divFormulario .buttonIngresar {
+	grid-column: 1 / -1;
+    grid-row: 5 / 6;
+    border-radius: .2em;
+	background: #6d95eb;
+	color: rgb(29, 28, 28);
+	width: 100%;
+	margin: auto;
+    padding: 0.5em;
+    border: none;
+	
+}
+.modal .divFormulario .buttonIngresar:hover {
+	color: #fff;
+	background: rgb(166, 225, 219);
+	box-shadow: 0 2px 2px 0 #131516;
+	
+}
+.modal .divFormulario .buttonPagar {
+	grid-column: 6 / 11;
+    grid-row: 13 / 15;
+    border-radius: 0px;
+    background: rgba(110, 110, 110, 0.2);
+    color: #121212;
+}
+
+/* -------------- pagar producto ----------------- */
+.modal .divFormulario .divFormularioPago {
+	width: 100%;
+    grid-column: 5 / -1;
+	grid-row: 4 / 15;
+	background-color: rgba(139,138,138, 0.2);
+
+    /*background: rgba(139, 138, 138, 0.2);*/
+}
+.modal .divFormulario .divPagarProductoTitular .labelTitular{
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+.modal .divFormulario .divPagarProductoTitular  {
+	position: relative;
+	background-color: rgba(139,138,138, 0.2);
+}
+.modal .divFormulario .divPagarProductoTitular .input-tarjeta {
+	width: 100%;
+	/*background-color: #fff;*/
+	border: 1px solid transparent;
+	border-radius: 3px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+.modal .divFormulario .divPagarProductoTitular .input-tarjeta:focus {
+	border: 2px solid #3ab15e;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163 0.4);
+} 
+.modal .divFormulario .divCreditos {
+	width: 100%;
+	height: 12vh;
+    grid-column: 5 / -1;
+	grid-row: 4 / 15;
+	background-color: rgba(139,138,138, 0.2);
+}
+.modal .divFormularioPago .mensajeAviso2 {
+	width: 100%;
+	height: 6vh;
+	margin-top: 1em;
+    grid-column: 1 / -1;
+	grid-row: 14 / 15;
+	background-color: rgba(139,138,138, 0.2);
+}
+/*.modal .divFormulario .divPagarProductoNumero {
+	width: 100%;
+    text-align: center;
+    grid-column: 4 / -1;
+    grid-row: 7 / 9;
+    margin: auto;
+    background: rgba(139, 138, 138, 0.2);
+}
+.modal .divFormulario .divPagarProductoNumero #inputNumeroTarjeta{
+	text-align: center;
+	width: 100%;
+}*/
+/* --------------- fin pagar producto -------------- */
+.modal span {
+	font-size: 1em;
+	font-weight: 700;
+}
+.modal div div .buttonEliminar {
+	background-color: red;
+    width: 40%;
+    font-size: 1.5em;
+}
+.modal button {
+	/*margin-top: 1em;*/
+	border-radius: .5em;
+	border: 1px solid #D4EAF3;
+	/*width: 100%;*/
+	padding: 0 .5em;
+	background: #1A4A5E;
+	font-size: 1.8em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: center;
+	color: #D4EAF3;
+	cursor: pointer;
+	
+}
+
+.modal button:hover {
+	border: 1px solid #1A4A5E;
+	background: #eaedee;
+	color: #1A4A5E;	
+}
+
+.modal ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.modal li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	font-size: 1.4em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: left;
+	color: #1A4A5E;
+}
+
+.modal li a {
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: left;
+	color: #1A4A5E;
+}
+.modalTimer .divConfirmarPago {
+	width: 50%;
+    height: 40vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.modalTimer .divConfirmarPago img{
+	margin: 1.2em;
+    width: 20%;
+   
+}
+.modalTimer .divConfirmarPago h2{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    margin: 1em;
+}
+/**	Footer */
+/*footer {
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 2em 4em;
+	background-color: black;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	list-style: none;
+}
+
+footer ul li {
+	font-family: 'Montserrat';
+	font-size: 1.6em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: center;
+	color: #ffff;
+}
+
+footer ul li a {
+	font-family: 'Montserrat';
+	font-size: 1em;
+	text-decoration: none;
+	color: #D4EAF3;
+}
+
+footer ul li a:hover {
+	color: #eba622;
+}*/
+footer {
+    background-color: #343a40;
+}
+#footer {
+    background-color: #343a40;
+	justify-content:center;
+	margin-top: 1em;
+}
+#footer :nth-child(1){
+	width: 40px;
+}
+#footer :nth-child(3){
+	width: 40px;
+}
+#footer :nth-child(2){
+	width: 40px;
+}
+#footer :nth-child(4){
+	width: 40px;
+}
+#footer :nth-child(5){
+	width: 40px;
+}
+#footer01 > ul > li {
+    background-color: #343a40;;
+	display: inline-block;
+	justify-content: center;
+	color:white;
+	list-style: none; 
+	line-height: 2.5;	
+}
+
+@media screen and (min-width: 760px) and (max-width: 960px) {
+
+	header {
+	
+		grid-template-rows: repeat(2, 2em);
+	}
+	
+	header > div > button {
+	    grid-column: 11 / -1;
+		margin-top: 0.2em;
+		margin-left: 0.5em;
+	}
+	header > .carrito > .paDos {
+	
+		/* margin-left: 0.5em; */
+		width: 22%;
+	
+	}
+	
+	main section h2 {
+		font-size: 75px;
+	}
+	#productos > .divProductos:nth-child(1) {
+	
+		width: 30%;
+	}
+	
+	#productos > .divProductos:nth-child(1):hover {
+		height: 30.3%;
+		margin-top: 1em;
+	}
+	#productos > .divProductos:nth-child(2) {
+	
+		width: 30%;
+	}
+	#productos > .divProductos:nth-child(2):hover {
+		height: 30.3%;
+		margin-top: 1em;
+	}
+	#productos > .divProductos:nth-child(3) {
+	
+		width: 30%;
+	}
+	#productos > .divProductos:nth-child(3):hover {
+		height: 30.3%;
+		margin-top: 1em;
+	}
+	#productos > .divProductos:nth-child(4) {
+	
+		width: 30%;
+	}
+	#productos > .divProductos:nth-child(4):hover {
+		height: 30.3%;
+		margin-top: 1em;
+	}
+	#productos > .divProductos:nth-child(5) {
+	
+		width: 30%;
+	}
+	#productos > .divProductos:nth-child(5):hover {
+		height: 30.3%;
+		margin-top: 1em;
+	}
+	#productos > .divProductos:nth-child(6) {
+	
+		width: 30%;
+	}
+	#productos > .divProductos:nth-child(6):hover {
+		height: 30.3%;
+		margin-top: 1em;
+	}
+	.modal .div2 #divValores h4{
+		width: 35%;
+	
+	}
+	.modal .div2 .divMostrarCarrito button {
+		
+		width: 6%;
+	}
+	.modal > .div2 > .texCarritoVacio {
+		padding: 0.5em;
+		font-size: 2em;
+		
+	}
+	.modal > .div2 > .texCarritoVacioA {
+		padding: 0.5em;
+		font-size: 2em;
+	}
+	.modal .divFormularioPago {
+	
+		width: 75%;
+	
+	}
+	.modal .divFormulario .formIngresoUsuario {
+		width: 50%;
+	
+	}
+	.modal .divFormularioPago .formIngresoPago {
+		width: 58%;
+		/*margin: auto;*/
+		
+	}
+	.modal .divFormularioPago .divCreditos {
+		margin: 0;
+		width: 90%;
+		
+	}
+	.modal .divVerProducto {
+		width: 70%;
+		
+	}
+	.modalHombre .divHombre .divFotHombres .h2Hombre {
+		
+		top: 12em;
+		left: 8em;
+	}
+	/*.modal .divFormularioPago .divCreditos #productosAnuncio{
+		
+		width: 30%;
+		
+	}*/
+	.modal .divFormularioPago .contenedor {
+		/* background: #3ab15e; */
+		width: 100%;
+		
+		margin-left: 0;
+	}
+	.modalTimer .divConfirmarPago {
+		
+		height: 34vh;
+	}
+	
+}
+@media screen and (min-width: 680px) and (max-width: 759px) {
+
+	header {
+	
+		grid-template-rows: repeat(2, 2em);
+	}
+	
+	
+	header > .carrito > button {
+	
+		width: 5%;
+		margin-right: 3em;
+	}
+	header > .carrito > .paDos {
+		width: 23%;
+		margin-top: 0.5em;
+	}
+	header > .carrito > .paa {
+		margin-right: -10.5em;
+	}
+	main section h2 {
+		font-size: 75px;
+	}
+	#productos > .divProductos:nth-child(1) {
+	
+		width: 30%;
+	}
+	#productos > .divProductos:nth-child(1):hover {
+		height: 30.5%;
+		margin-top: 1em;
+	}
+	#productos > .divProductos:nth-child(2) {
+	
+		width: 30%;
+	}
+	#productos > .divProductos:nth-child(2):hover {
+		height: 30.5%;
+		margin-top: 1em;
+	}
+	#productos > .divProductos:nth-child(3) {
+	
+		width: 30%;
+	}
+	#productos > .divProductos:nth-child(3):hover {
+		height: 30.5%;
+		margin-top: 1em;
+	}
+	#productos > .divProductos:nth-child(4) {
+	
+		width: 30%;
+	}
+	#productos > .divProductos:nth-child(4):hover {
+		height: 30.5%;
+		margin-top: 1em;
+	}
+	#productos > .divProductos:nth-child(5) {
+	
+		width: 30%;
+	}
+	#productos > .divProductos:nth-child(5):hover {
+		height: 30.5%;
+		margin-top: 1em;
+	}
+	#productos > .divProductos:nth-child(6) {
+	
+		width: 30%;
+	}
+	#productos > .divProductos:nth-child(6):hover {
+		height: 30.5%;
+		margin-top: 1em;
+	}
+	.modal .div2 #divValores h4{
+		width: 40%;
+	
+	}
+	.modal .div2 .divMostrarCarrito button {
+		
+		width: 6%;
+	}
+	.modal .div2 .divBotones .botonFinCompra {
+		
+		width: 19%;
+		margin-right: 0.1em;
+	}
+	.modal > .div2 > .texCarritoVacio {
+		
+		font-size: 2em;
+		
+	}
+	.modal > .div2 > .texCarritoVacioA {
+		
+		font-size: 1.8em;
+	}
+	.modal .divFormulario .formIngresoUsuario {
+		width: 75;
+	
+	}
+	.modal .divFormularioPago h2 {
+		font-size: 3em;
+	}
+	.modal .divFormularioPago .formIngresoPago {
+		width: 90%;
+	
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento {
+		
+		padding: 0em; 
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento .labelVencimiento {
+		font-size: 1.1em;
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento .inputVencimiento {
+	
+		padding: 1.2em;
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo {
+		
+		padding: 0em; 
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo .labelCodigo {
+		
+		font-size: 1.1em;
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo .inputCodigo {
+	
+		padding: 1.2em;
+		
+	}
+	.modal .divVerProducto {
+		width: 70%;
+		
+	}
+	.modal .divVerProducto .divParaMin img {
+		width: 9em;
+		height: 7em;
+	}
+	.modalHombre .divHombre .divProductos h3 {
+	
+		font-size: 1.3em;
+	}
+	.modalHombre .divHombre .divFotHombres .h2Hombre {
+		
+		top: 14em;
+		
+	}
+	.modal .divFormularioPago {
+		
+		width: 90%;
+	
+	}
+	.modal .divFormularioPago .contenedor {
+		
+		margin-left: 3em;
+	}
+	.modal .divFormularioPago .divCreditos {
+	
+		width: 90%;
+	
+	}
+	.modalTimer .divConfirmarPago {
+		
+		height: 31vh;
+	}
+}
+@media screen and (min-width: 580px) and (max-width: 679px) {
+	#logo {
+		width: 16%;
+	}
+	
+	
+	header > .carrito > button {
+	
+		width: 5%;
+		margin-right: 3em;
+	}
+	header > .carrito > .paDos {
+		width: 29%;
+		margin-top: 0.5em;
+		padding-left: 2em;
+	
+	}
+	header > .carrito > .paa {
+		margin-right: -10.5em;
+	}
+
+	#productos {
+		align-items: center;
+	}
+	main section h2 {
+		font-size: 60px;
+	}
+	#productos > .divProductos:nth-child(1) {
+		
+		width: 35%;
+	}
+	#productos > .divProductos:nth-child(1):hover {
+		height: 30%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(1) > .categoria {
+		padding: 1em;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	#productos > .divProductos:nth-child(1) > .descripcionProducto > h3 {
+	
+		font-size: 1.5em;
+		
+	}
+	#productos > .divProductos:nth-child(2) {
+	
+		width: 35%;
+	}
+	#productos > .divProductos:nth-child(2):hover {
+		height: 30%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(2) > .categoria {
+		padding: 1em;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	#productos > .divProductos:nth-child(2) > .descripcionProducto > h3 {
+	
+		font-size: 1.5em;
+		
+	}
+	#productos > .divProductos:nth-child(3) {
+	
+		width: 35%;
+	}
+	#productos > .divProductos:nth-child(3):hover {
+		height: 30%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(3) > .categoria {
+		padding: 1em;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	#productos > .divProductos:nth-child(3) > .descripcionProducto > h3 {
+	
+		font-size: 1.5em;
+		
+	}
+	#productos > .divProductos:nth-child(4) {
+	
+		width: 35%;
+	}
+	#productos > .divProductos:nth-child(4):hover {
+		height: 30%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(4) > .categoria {
+		padding: 1em;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	#productos > .divProductos:nth-child(4) > .descripcionProducto > h3 {
+	
+		font-size: 1.5em;
+		
+	}
+	#productos > .divProductos:nth-child(5) {
+	
+		width: 35%;
+	}
+	#productos > .divProductos:nth-child(5):hover {
+		height: 30%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(5) > .categoria {
+		padding: 1em;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	#productos > .divProductos:nth-child(5) > .descripcionProducto > h3 {
+	
+		font-size: 1.5em;
+		
+	}
+	#productos > .divProductos:nth-child(6) {
+	
+		width: 35%;
+	}
+	#productos > .divProductos:nth-child(6):hover {
+		height: 30%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(6) > .categoria {
+		padding: 1em;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	#productos > .divProductos:nth-child(6) > .descripcionProducto > h3 {
+	
+		font-size: 1.5em;
+		
+	}
+	.modal .div2 .divMostrarCarrito button {
+		
+		width: 8%;
+	}
+	.modal .div2 .divBotones .botonFinCompra {
+
+		width: 16%;
+		margin-right: 0.1em;
+	}
+	.modal .div2 #divValores h4 {
+		width: 50%;
+	}
+	.modal > .div2 > .texCarritoVacio {
+		
+		font-size: 1.5em;
+		
+	}
+	.modal > .div2 > .texCarritoVacioA {
+		
+		font-size: 1.5em;
+	}
+	.modal .divFormulario .formIngresoUsuario {
+		width: 60%;
+	
+	}
+	.modal .divFormularioPago h2 {
+		font-size: 3em;
+	}
+	.modal .divFormularioPago .formIngresoPago {
+		width: 90%;
+	
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento {
+		
+		padding: 0em; 
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento .labelVencimiento {
+		font-size: 1.1em;
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento .inputVencimiento {
+	
+		padding: 1em;
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo {
+		
+		padding: 0em; 
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo .labelCodigo {
+		
+		font-size: 1.1em;
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo .inputCodigo {
+	
+		padding: 1em;
+		
+	}
+	.modal .divVerProducto {
+		width: 80%;
+	}
+	.modal .divVerProducto .divParaMin img {
+		width: 9em;
+		height: 7em;
+	}
+	.modalHombre .divHombre .divProductos h3 {
+	
+		font-size: 1.3em;
+	}
+	.modalHombre .divHombre .divFotHombres .h2Hombre {
+		top: 16em;
+		left: 6em;
+	}
+	.modal .divFormularioPago {
+		width: 88%;
+		
+	}
+	.modal .divFormularioPago .contenedor {
+		margin-left: 2.5em;
+	}
+	.modal .divFormularioPago .divCreditos {
+		width: 88%;
+	
+	}
+	.modalTimer .divConfirmarPago {
+	
+		height: 30vh;
+		
+	}
+	.modalTimer .divConfirmarPago h2 {
+		
+		font-size: 1.6em;
+	}
+	.modalTimer .divImagenBanner .TituloBanner {
+
+		font-size: 3em;
+		width: 60%;
+	
+	}
+
+}
+@media screen and (min-width: 480px) and (max-width: 579px) {
+	#logo {
+		width: 20%;
+		top: 2%;
+		left: 2%;
+		
+	}
+	
+	header > .carrito > button {
+	
+		width: 6%;
+		margin-right: 3em;
+	}
+	header > .carrito > .paDos {
+		width: 29%;
+		margin-top: 0.5em;
+		padding-left: 2em;
+		font-size: 1.4em;
+	
+	}
+	header > .carrito > .paa {
+		margin-right: -9.5em;
+	}
+	header > .barra > ul {
+	    margin-top: 5em;
+		position: relative;
+		margin-left: 13em;
+	}
+	header > .barra > ul > li > span {
+		color: #000;
+		font-size: 1.5em;
+		position: relative;
+		margin-left: 0em;
+		font-weight: 900;
+	}
+	#productos {
+		align-items: center;
+	}
+	main section h2 {
+		font-size: 60px;
+	}
+	#productos > .divProductos:nth-child(1) {
+		
+		width: 35%;
+	}
+	#productos > .divProductos:nth-child(1):hover {
+		height: 30%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(1) > .categoria {
+		padding: 1em;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	#productos > .divProductos:nth-child(1) > .descripcionProducto > h3 {
+	
+		font-size: 1.5em;
+		
+	}
+	#productos > .divProductos:nth-child(2) {
+	
+		width: 35%;
+	}
+	#productos > .divProductos:nth-child(2):hover {
+		height: 30%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(2) > .categoria {
+		padding: 1em;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	#productos > .divProductos:nth-child(2) > .descripcionProducto > h3 {
+	
+		font-size: 1.5em;
+		
+	}
+	#productos > .divProductos:nth-child(3) {
+	
+		width: 35%;
+	}
+	#productos > .divProductos:nth-child(3):hover {
+		height: 30%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(3) > .categoria {
+		padding: 1em;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	#productos > .divProductos:nth-child(3) > .descripcionProducto > h3 {
+	
+		font-size: 1.5em;
+		
+	}
+	#productos > .divProductos:nth-child(4) {
+	
+		width: 35%;
+	}
+	#productos > .divProductos:nth-child(4):hover {
+		height: 30%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(4) > .categoria {
+		padding: 1em;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	#productos > .divProductos:nth-child(4) > .descripcionProducto > h3 {
+	
+		font-size: 1.5em;
+		
+	}
+	#productos > .divProductos:nth-child(5) {
+	
+		width: 35%;
+	}
+	#productos > .divProductos:nth-child(5):hover {
+		height: 30%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(5) > .categoria {
+		padding: 1em;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	#productos > .divProductos:nth-child(5) > .descripcionProducto > h3 {
+	
+		font-size: 1.5em;
+		
+	}
+	#productos > .divProductos:nth-child(6) {
+	
+		width: 35%;
+	}
+	#productos > .divProductos:nth-child(6):hover {
+		height: 30%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(6) > .categoria {
+		padding: 1em;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	#productos > .divProductos:nth-child(6) > .descripcionProducto > h3 {
+	
+		font-size: 1.5em;
+		
+	}
+	
+	.modal .div2 .divMostrarCarrito button {
+		
+		width: 9%;
+	}
+	.modal .div2 .divBotones .botonFinCompra {
+		font-size: 1.4em;
+		margin-right: 0.1em;
+	}
+	.modal .div2 #divValores h3 {
+		font-size: 1.5em;
+	}
+	.modal .div2 #divValores h4 {
+		width: 50%;
+		font-size: 1.3em;
+	}
+	.modal .div2 .divBotones .LimpiarCompra {
+		padding-right: 1em;
+    padding-left: 1em;
+		padding: 0.4em;
+	}
+	.modal > .div2 > .texCarritoVacio {
+		
+		font-size: 1.5em;
+		
+	}
+	.modal > .div2 > .texCarritoVacioA {
+		
+		font-size: 1.4em;
+	}
+	.modal .divFormulario .formIngresoUsuario {
+		width: 75%;
+	
+	}
+	.modal .divFormularioPago h2 {
+		font-size: 3em;
+	}
+	.modal .divFormularioPago .formIngresoPago {
+		width: 90%;
+	
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento {
+		
+		padding: 0em; 
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento .labelVencimiento {
+		font-size: 1.1em;
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento .inputVencimiento {
+	
+		padding: 1em;
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo {
+		
+		padding: 0em; 
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo .labelCodigo {
+		
+		font-size: 1.1em;
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo .inputCodigo {
+	
+		padding: 1em;
+		
+	}
+	.modal .divVerProducto {
+		width: 90%;
+	}
+	.modal .divVerProducto .divParaMin img {
+		width: 8em;
+		height: 6em;
+	}
+	.modalHombre .divHombre .divProductos h3 {
+		font-size: 1em;
+	}
+	.modalHombre .divHombre .divProductos p {
+		font-size: 1em;
+		
+	}
+	.modalHombre .divHombre .divProductos p span {
+		font-size: 1.3em;
+	}
+	.modal .divFormularioPago {
+		width: 90%;
+		
+	}
+	.modal .divFormularioPago .contenedor {
+		margin-left: 2.5em;
+	}
+	.modal .divFormularioPago .divCreditos {
+		width: 88%;
+	
+	}
+	
+	.modalTimer .divConfirmarPago {
+	
+		height: 25vh;
+		
+	}
+	.modalTimer .divConfirmarPago h2 {
+		
+		font-size: 1.3em;
+	}
+	.modalTimer .divImagenBanner .TituloBanner {
+		font-size: 3em;
+		width: 77%;
+	
+	}
+	
+}
+@media screen and (min-width: 400px) and (max-width: 479px) {
+	#logo {
+		width: 20%;
+		top: 2%;
+		left: 2%;
+		
+	}
+	
+	header > .carrito > button {
+	
+		width: 6%;
+		margin-right: 3em;
+	}
+	header > .carrito > .paDos {
+		width: 39%;
+		margin-top: 0.5em;
+		padding-left: 2em;
+		font-size: 1.4em;
+	
+	}
+	header > .carrito > .paa {
+		margin-right: -9.5em;
+	}
+	header > .barra > ul {
+		margin-top: 5em;
+		position: relative;
+		margin-left: 8.6em;
+	
+	}
+	header > .barra > ul > li > span {
+		color: #000;
+		font-size: 1.5em;
+		position: relative;
+		margin-left: 0em;
+		font-weight: 900;
+	}
+	main section h2 {
+		margin-top: 0.3em;
+		font-size: 50px;
+	}
+	#productos > .divProductos:nth-child(1) {
+	
+		width: 50%;
+	}
+	#productos > .divProductos:nth-child(1):hover {
+		height: 15%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(2) {
+	
+		width: 50%;
+	}
+	#productos > .divProductos:nth-child(2):hover {
+		height: 15%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(3) {
+	
+		width: 50%;
+	}
+	#productos > .divProductos:nth-child(3):hover {
+		height: 15%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(4) {
+	
+		width: 50%;
+	}
+	#productos > .divProductos:nth-child(4):hover {
+		height: 15%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(5) {
+	
+		width: 50%;
+	}
+	#productos > .divProductos:nth-child(5):hover {
+		height: 15%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(6) {
+	
+		width: 50%;
+	}
+	#productos > .divProductos:nth-child(6):hover {
+		height: 15%;
+		margin-top: .7em;
+	}
+	.modal .div2 .divMostrarCarrito .ulCarrito {
+	
+		flex-direction: column;
+	}
+	.modal .div2 .divMostrarCarrito button {
+
+		width: 13%;
+		margin-top: 1em;
+	}
+	.modal .div2 .divBotones .botonFinCompra {
+		font-size: 1.3em;
+		width: 22%;
+		margin: 0.5em;
+		margin-right: 0.1em;
+	}
+	.modal .div2 .divBotones .LimpiarCompra {
+		
+		font-size: 1em;
+	}
+	.modal .div2 #divValores h3 {
+		width: 50%;
+    	font-size: 1.2em;
+    	text-align: center;
+	}
+	.modal .div2 #divValores {
+		justify-content: start;
+	}
+	.modal .div2 #divValores h4 {
+		width: 50%;
+		font-size: 1.1em;
+	}
+	.modal > .div2 > .texCarritoVacio {
+		
+		font-size: 1.5em;
+		
+	}
+	.modal > .div2 > .texCarritoVacioA {
+		
+		font-size: 1.1em;
+	
+		
+	}
+	.modal .divFormulario .formIngresoUsuario {
+		width: 90%;
+	
+	}
+	.modal .divFormularioPago h2 {
+		font-size: 2em;
+	}
+	.modal .divFormularioPago .formIngresoPago {
+		width: 90%;
+	
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento {
+		
+		padding: 0em; 
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento .labelVencimiento {
+		font-size: 1.1em;
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento .inputVencimiento {
+	
+		padding: 1em;
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo {
+		
+		padding: 0em; 
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo .labelCodigo {
+		
+		font-size: 1.1em;
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo .inputCodigo {
+	
+		padding: 1em;
+		
+	}
+	.modal .divVerProducto {
+		width: 90%;
+	}
+	.modal .divVerProducto .divParaMin img {
+		width: 6.5em;
+		height: 4.5em;
+	}
+	.modalHombre .divHombre .divFotHombres .h2Hombre {
+		top: 12em;
+		left: 4em;
+	}
+	.modalHombre .divHombre .divProductos {
+		width: 100%;
+	}
+	.modalHombre .divHombre .divProductos img {
+		width: 36%;
+		height: 8em;
+		margin: 0;
+	}
+	.modalHombre .divHombre .divProductos .divInfoHombres {
+		width: 64%;
+		height: 8em;
+	}
+	.modalHombre .divHombre .divProductos .divInfoHombres h3{
+		font-size: 1.5em;
+	}
+	.modalHombre .divHombre .divProductos .divInfoHombres p span{
+		font-size: 1.2em;
+	}
+	.modalHombre .divHombre .divFotHombres img {
+		width: 100%;
+	}
+	.modal .divFormularioPago {
+		width: 90%;
+		
+	}
+	.modal .divFormularioPago .contenedor {
+		margin-left: 2em;
+	}
+	.modal .divFormularioPago .divCreditos {
+		width: 90%;
+	
+	}
+	.modal .divFormularioPago .contenedor .tarjeta .delantera .logoMarca {
+		text-align: right;
+		min-height: 0; 
+	}
+	.modal .divFormularioPago .contenedor .tarjeta .delantera .imgChip {
+		width: 100%;
+		max-width: 40px;
+		margin-bottom: 20px;
+	}
+	.modal .divFormularioPago .divCreditos .divDatosTitular {
+		width: 80%;
+		padding: 1em;
+		margin: auto;
+	}
+	.divFlexbox .divGrupoExpira .divFlexbox .divGrupoSelect select {
+		
+		margin-right: 0; 
+	}
+	
+	.modalTimer .divConfirmarPago {
+		width: 75%;
+		height: 30vh;
+		
+	}
+	.modalTimer .divConfirmarPago h2 {
+		
+		font-size: 1.6em;
+	}
+	.modalTimer .divImagenBanner .TituloBanner {
+		font-size: 2em;
+		width: 75%;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 399px) {
+
+	#logo {
+		width: 20%;
+		top: 2%;
+		left: 2%;
+		
+	}
+	
+	header > .carrito > button {
+	    width: 11%;
+    	margin-right: 2em;
+	}
+	header > .carrito > .paDos {
+		width: 46%;
+		margin-top: 0.5em;
+		padding-left: 2em;
+		font-size: 1.4em;
+	
+	}
+	header > .carrito > .paa {
+		margin-right: -9.5em;
+	}
+	header > .barra > ul {
+	    margin-top: 5em;
+		position: relative;
+		margin-left: 4.8em;
+	}
+	header > .barra > ul > li > span {
+		color: #000;
+		font-size: 1.5em;
+		position: relative;
+		margin-left: 0em;
+		font-weight: 900;
+	}
+	main section h2 {
+		font-size: 40px;
+		margin-top: 0.3em;
+	}
+
+	#productos > .divProductos:nth-child(1) {
+	
+		width: 80%;
+	}
+	#productos > .divProductos:nth-child(1):hover {
+		height: 15.3%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(2) {
+	
+		width: 80%;
+	}
+	#productos > .divProductos:nth-child(2):hover {
+		height: 15.3%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(3) {
+	
+		width: 80%;
+	}
+	#productos > .divProductos:nth-child(3):hover {
+		height: 15.3%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(4) {
+	
+		width: 80%;
+	}
+	#productos > .divProductos:nth-child(4):hover {
+		height: 15.3%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(5) {
+	
+		width: 80%;
+	}
+	#productos > .divProductos:nth-child(5):hover {
+		height: 15.3%;
+		margin-top: .7em;
+	}
+	#productos > .divProductos:nth-child(6) {
+	
+		width: 80%;
+	}
+	#productos > .divProductos:nth-child(6):hover {
+		height: 15.3%;
+		margin-top: .7em;
+	}
+	.modal .div2 {
+		width: 90%;
+	}
+	.modal .div2 #divValores {
+		
+		justify-content: center;
+		
+	}
+	.modal .div2 #divValores h3 {
+		text-align: center;
+		margin-top: 0.3em;
+		font-size: 1em;
+	}
+	.modal .div2 #divValores h4 {
+		width: 50%;
+		font-size: 1em;
+	}
+	.modal .div2 .divMostrarCarrito button {
+	
+		width: 15%;
+		
+	}
+	.modal .div2 .divBotones .botonFinCompra {
+		font-size: 1.3em;
+		margin-right: 0.1em;
+		width: 100%;
+	}
+	.modal .div2 .divBotones .LimpiarCompra {
+	
+		font-size: 0.9em;
+	
+	}
+	.modal > .div2 > .texCarritoVacio {
+		font-size: 1.3em;
+	}
+	.modal > .div2 > .texCarritoVacioA {
+		font-size: 1em;	
+	}
+	.modal .divFormulario .formIngresoUsuario {
+		width: 90%;
+	}
+	.modal .divFormulario h2 {
+		font-size: 2.6em;
+	}
+	.modal .divFormularioPago .formIngresoPago {
+		width: 90%;
+	}
+	.modal .divFormulario .formIngresoUsuario .divNombre .inputNombre::placeholder {
+		font-size: 1em;
+		text-align: center;
+	}
+	.modal .divFormulario .formIngresoUsuario .divPassword .inputPassword::placeholder {
+		font-size: 1em;
+		text-align: center;
+	}
+	.modal .divFormulario .formIngresoUsuario .divConfirmarPassword .inputConfirmarPassword::placeholder {
+		font-size: 1em;
+		text-align: center;
+	}
+	.modal .divFormularioPago h2 {
+		font-size: 2em;
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento {
+		
+		padding: 0em; 
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento .labelVencimiento {
+		font-size: 1.1em;
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoVencimiento .inputVencimiento {
+	
+		padding: 1em;
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo {
+		
+		padding: 0em; 
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo .labelCodigo {
+		
+		font-size: 1.1em;
+		
+	}
+	.modal .divFormularioPago .formIngresoPago .divPagarProductoCodigo .inputCodigo {
+	
+		padding: 1em;
+		
+	}
+	.modal .divVerProducto {
+		width: 95%;
+		
+	}
+	.modal .divVerProducto .divParaMin img {
+		width: 5.7em;
+    	height: 4.6em;
+	}
+	.modalHombre .divHombre .divFotHombres .h2Hombre {
+		top: 12em;
+		left: 4em;
+		height: 3em;
+	}
+	.modalHombre .divHombre .divProductos {
+		width: 100%;
+	}
+	.modalHombre .divHombre .divProductos img {
+		width: 36%;
+		height: 8em;
+		margin: 0;
+	}
+	.modalHombre .divHombre .divProductos .divInfoHombres {
+		width: 64%;
+		height: 8em;
+	}
+	.modalHombre .divHombre .divProductos .divInfoHombres h3{
+		font-size: 1.2em;
+		
+	}
+	.modalHombre .divHombre .divProductos .divInfoHombres p {
+		margin-left: 0.6em;
+	}
+	.modalHombre .divHombre .divProductos .divInfoHombres p span{
+		font-size: 1em;
+		margin-left: 0.2em;
+	}
+	.modalHombre .divHombre .divFotHombres img {
+		width: 100%;
+		height: 10em;
+	}
+	.modal li {
+	
+		font-size: 1em;
+	
+	}
+	.modal .divFormularioPago {
+		width: 90%;
+		
+	}
+	.modal .divFormularioPago .contenedor {
+		margin-left: 0;
+		width: 100%;
+	}
+	.modal .divFormularioPago .divCreditos {
+		width: 90%;
+	
+	}
+	.modal .divFormularioPago .contenedor .tarjeta .delantera .logoMarca {
+		text-align: right;
+		min-height: 0; 
+	}
+	.modal .divFormularioPago .contenedor .tarjeta .delantera .imgChip {
+		width: 100%;
+		max-width: 40px;
+		margin-bottom: 20px;
+	}
+	.modal .divFormularioPago .divCreditos .divDatosTitular {
+		width: 80%;
+		padding: 1em;
+		margin: auto;
+	}
+	.divFlexbox .divGrupoExpira .divFlexbox .divGrupoSelect select {
+		
+		margin-right: 0; 
+	}
+	.modal .divFormularioPago .contenedor .formIngresoPago {
+		
+		padding: 141px 10px 30px 10px;
+	}
+	.modalTimer .divConfirmarPago {
+		width: 90%;
+		height: 30vh;
+		
+	}
+	.modalTimer .divConfirmarPago h2 {
+		
+		font-size: 1.6em;
+	}
+	.modalTimer .divImagenBanner .TituloBanner {
+		font-size: 1.3em;
+		width: 76%;
+		
+	}
+}
