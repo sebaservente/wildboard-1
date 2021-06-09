@@ -37,6 +37,9 @@ body {
 	
 }
 
+.imagenPrincipal{
+	background: url(../items/Asset1-81.png) no-repeat;
+}
 
 .navbar .navbar-toggler-icon{
 	background: url("../items/menu.png") no-repeat center center 100%;
