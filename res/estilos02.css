@@ -37,10 +37,69 @@ body {
 	
 }
 
-.imagenPrincipal{
-	background: url(../items/Asset1-81.png) no-repeat;
+.imagenPrincipal {
+	background: url(../items/imagenPrincipal.jpg) no-repeat 100%;
+    width: 100%;
+	height: 100vh;
+	display: flex;
 }
-
+.imagenPrincipal div:nth-child(1) {
+	margin-top: 15rem;
+	margin-left: 1rem;
+	background-color: rgba(235, 235, 235, 0.5);
+	padding: 0.7rem;
+	border-radius: 5px;
+	height: 60vh;
+	width: 33%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.imagenPrincipal div:nth-child(1) h3 {
+	font-weight: 900;
+	width: 100%;
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 2rem;
+}
+.imagenPrincipal div:nth-child(1) p {
+	font-weight: 900;
+	width: 100%;
+	font-size: 2rem;
+	text-align: center;
+	word-spacing: 2px;
+	line-height: normal;
+}
+.imagenPrincipal div:nth-child(1) button {
+	width: 80%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	border-radius: 5px;
+	box-shadow: 1px 2px 7px #121212;
+}
+.imagenPrincipal div:nth-child(2) {
+	margin-top: 15rem;
+	margin-left: 1rem;
+	background: #fff;
+	padding: 0.7rem;
+	opacity: 0.5;
+	border-radius: 5px;
+	height: 60vh;
+	width: 33%;
+}
+.imagenPrincipal div:nth-child(3) {
+	margin-top: 15rem;
+	margin-left: 1rem;
+	background: #fff;
+	padding: 0.7rem;
+	opacity: 0.5;
+	border-radius: 5px;
+	height: 60vh;
+	width: 33%;
+}
 .navbar .navbar-toggler-icon{
 	background: url("../items/menu.png") no-repeat center center 100%;
 	
@@ -200,6 +259,7 @@ main section h2 {
 	/*margin: .4em;
 	font-size: 3.4em;
 	line-height: 1.5;*/
+	position: absolute;
 	padding: .5em;
 	color: #99999985;
 	/*margin: 0 auto;*/
@@ -2136,6 +2196,7 @@ footer {
 	
 	main section h2 {
 		font-size: 75px;
+		width: 100%;
 	}
 	#productos > .divProductos:nth-child(1) {
 	
