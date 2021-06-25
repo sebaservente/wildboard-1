@@ -80,7 +80,7 @@ header > .carrito {
 header > .carrito > .paa {
 	color: #fff;
     font-size: 2em;
-    margin-right: -9em;
+    margin-right: -14em;
 }
 header > div{
 	/* background: #3d4242;*/
@@ -140,12 +140,13 @@ header > .carrito > p:nth-child(2) {
 }*/
 
 header > .carrito > .paDos {
-	font-size: 2em;
+    font-size: 2em;
     font-weight: 700;
     color: #eba622;
     /* margin-left: 0.5em; */
-    width: 18%;
-	margin-top: 0.5em;
+    width: 19%;
+    margin-top: 2.5em;
+    padding-left: 5.7rem;
 }
 header > .carrito > .paDos > span {
 	font-size: 1em;
@@ -193,7 +194,7 @@ main {
 main section {
 	margin-bottom: 4em;
     display: flex;
-    justify-content: center;
+/*    justify-content: center;*/
     flex-wrap: wrap;
 }
 
@@ -1317,7 +1318,7 @@ section .timerTitulos {
     flex-wrap: wrap;
     padding: 0.5em;
     width: 100%;
-    background: #ff9800;
+    background: #eba622;
 	
 }
 
@@ -1343,6 +1344,7 @@ section .timerTitulos {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+	padding: 0.5em;
 }
 
 .modal > .div2 > .texCarritoVacio {
@@ -1372,15 +1374,13 @@ section .timerTitulos {
 
 }
 .modal .div2 .divMostrarCarrito {
-    background: #f44336;
-    width: 5%;
-    height: 1.5em;
-    font-size: 2em;
-    margin-top: 0.4em;
-    box-shadow: -2px 2px 4px 0px #121212;
-    color: #fff;
+
+    width: 100%;
     display: flex;
-    justify-content: center;
+    grid-column: 1 / -1;
+    grid-row: auto;
+    border-bottom: 1px solid #999;
+    padding: 0.5em;
 }
 .modal .div2 .divMostrarCarrito .ulCarrito{
 	display: flex;
@@ -1394,7 +1394,7 @@ section .timerTitulos {
     font-size: 2em;
     margin-top: 0.4em;
     box-shadow: -2px 2px 4px 0px #121212;
-	color: #131516;
+	color: #fff;
     display: flex;
     justify-content: center;
 }
@@ -1440,7 +1440,7 @@ section .timerTitulos {
     justify-content: center;
     align-items: center;
     padding: 0.5em;
-    color: black;
+    color: #fff;
 	width: 100%;
     font-size: 3em;
     font-weight: 800;
@@ -1649,7 +1649,7 @@ section .timerTitulos {
 
 }
 .modal .divFormularioPago .buttonPagar {
-	border-color: 1px solid black;
+	border: 1px solid black;
 	border-radius: 5px;
 	width: 100%;
 	background: rgb(166, 225, 219);
@@ -1671,26 +1671,28 @@ section .timerTitulos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-	background: aliceblue;
+	background: #fff;
 }
 .modal .divFormulario h2 {
 	display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5em;
-    color: black;
+    color: #fff;
 	width: 100%;
     font-size: 3em;
     font-weight: 800;
-    background: aqua;
+    background: #302f2f;
 	
 }
 .modal .divFormulario .mensajeAviso {
-	width: 100%;
-    margin: auto;
+    width: 50%;
+    margin: auto 1rem 1rem;
     text-align: center;
     font-size: 2em;
-	padding: 0.5em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px -2px black;
     
 }
 .modal .divFormularioPago .mensajeAviso {
@@ -1707,11 +1709,12 @@ section .timerTitulos {
 	width: 94%;
 }
 .modal .divFormulario .formIngresoUsuario {
-	width: 50%;
-	margin: auto;
-	background: rgb(139 138 138 / 20%);
-	padding: 1em;
-	margin: 3em;
+    width: 50%;
+    margin: auto;
+    background: rgb(244 244 246);
+    padding: 1em;
+    margin: 3em;
+    box-shadow: 1px 1px 5px -3px black;
 }
 /* ----------------- div nombre -------------*/
 .modal .divFormulario .formIngresoUsuario .divNombre {

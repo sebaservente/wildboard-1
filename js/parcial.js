@@ -1232,7 +1232,7 @@ function confirmarPago() {
             div.appendChild(divConfirmarPago);
             
             let imagenConfirmar = d[_cr]('img');
-            imagenConfirmar.src = 'items/Asset1-8.png';
+            imagenConfirmar.src = 'items/Asset1-811.png';
             imagenConfirmar.alt = 'logo marca';
             divConfirmarPago.appendChild(imagenConfirmar);
 
