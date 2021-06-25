@@ -32,10 +32,6 @@ html {
 	font-weight: 400;
 }
 
-body {
-	background-image:#ffff;
-	
-}
 
 .imagenPrincipal {
 	background: url(../items/imagenPrincipal.jpg) no-repeat 100%;
@@ -121,7 +117,7 @@ header {
 #logo {
 	width: 8%;
     height: 93px;
-    background: url(../items/Asset1-81.png) no-repeat;
+    background: url(../items/Asset1-811.png) no-repeat;
     font-size: 0;
     position: absolute;
     top: 2%;
@@ -1704,7 +1700,7 @@ section #productosAnuncio {
 
 }
 .modal .divFormularioPago .buttonPagar {
-	border-color: 1px solid black;
+
 	border-radius: 5px;
 	width: 100%;
 	background: rgb(166, 225, 219);
@@ -1763,10 +1759,8 @@ section #productosAnuncio {
 }
 .modal .divFormulario .formIngresoUsuario {
 	width: 50%;
-	margin: auto;
-	background: rgb(139 138 138 / 20%);
+	margin: auto 3rem;
 	padding: 1em;
-	margin: 3em;
 }
 /* ----------------- div nombre -------------*/
 .modal .divFormulario .formIngresoUsuario .divNombre {
@@ -2403,8 +2397,7 @@ footer {
 		font-size: 1.8em;
 	}
 	.modal .divFormulario .formIngresoUsuario {
-		width: 75;
-	
+		width: 75%;
 	}
 	.modal .divFormularioPago h2 {
 		font-size: 3em;
