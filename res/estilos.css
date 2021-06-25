@@ -37,7 +37,6 @@ body {
 	
 }
 
-
 .navbar .navbar-toggler-icon{
 	background: url("../items/menu.png") no-repeat center center 100%;
 	
@@ -81,7 +80,7 @@ header > .carrito {
 header > .carrito > .paa {
 	color: #fff;
     font-size: 2em;
-    margin-right: -18em;
+    margin-right: -9em;
 }
 header > div{
 	/* background: #3d4242;*/
@@ -1318,7 +1317,7 @@ section .timerTitulos {
     flex-wrap: wrap;
     padding: 0.5em;
     width: 100%;
-    background: antiquewhite;
+    background: #ff9800;
 	
 }
 
@@ -1344,7 +1343,6 @@ section .timerTitulos {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-	padding: 0.5em;
 }
 
 .modal > .div2 > .texCarritoVacio {
@@ -1374,13 +1372,15 @@ section .timerTitulos {
 
 }
 .modal .div2 .divMostrarCarrito {
-	   
-		width: 100%;
-		display: flex;
-		grid-column: 1 / -1;
-		grid-row: auto;
-		border-bottom: 1px solid #999;
-		padding: 0.5em;
+    background: #f44336;
+    width: 5%;
+    height: 1.5em;
+    font-size: 2em;
+    margin-top: 0.4em;
+    box-shadow: -2px 2px 4px 0px #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
 }
 .modal .div2 .divMostrarCarrito .ulCarrito{
 	display: flex;
@@ -1388,7 +1388,7 @@ section .timerTitulos {
     margin-top: 1em;
 }
 .modal .div2 .divMostrarCarrito button{
-	background: rgb(166, 225, 219);
+	background: rgb(252, 114, 85);
     width: 5%;
     height: 1.5em;
     font-size: 2em;
@@ -1408,15 +1408,15 @@ section .timerTitulos {
     width: 75%;
 	max-width: 1000px;
     height: auto;
-	background: aliceblue;
+	background: rgb(255, 255, 255);
 	/*padding: 0.5em;*/
 }
 .modal .div2 .carrito {
-	background: turquoise;
+	background: #302f2f;
     width: 100%;
     font-size: 3em;
     padding: 0.5em;
-    color: rgb(31, 30, 30);
+    color: #fff;
     font-weight: 800;
 	text-align: center;
 }
@@ -1430,8 +1430,8 @@ section .timerTitulos {
     width: 75%;
 	height: 100vh;
 	max-width: 1000px;
-    margin: auto;
-    margin: 1em;
+    margin: auto 1em;
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -1452,13 +1452,12 @@ section .timerTitulos {
     flex-wrap: wrap;
     justify-content: center;
     background: #73a0b7;
-    margin: 1em;
     padding-bottom: 2em;
-	margin: auto;
+	margin: 1em auto;
 }
 .modal .divFormularioPago .formIngresoPago .divPagarProductoTitular {
 	width: 100%;
-    padding: 0em 1em;
+    padding: 0 1em;
 }
 .modal .divFormularioPago .formIngresoPago .divPagarProductoTitular .labelTitular {
     display: block;
@@ -2019,7 +2018,6 @@ section .timerTitulos {
 	line-height: 1.5;
 	font-weight: 400;
 	text-align: left;
-	color: #1A4A5E;
 }
 
 .modal li a {
