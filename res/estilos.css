@@ -56,10 +56,10 @@ header {
     flex-wrap: wrap;
 	height: 10em;
 }
-#logo {
+.logo {
 	width: 8%;
     height: 93px;
-    background: url(../items/Asset1-81.png) no-repeat;
+    background: url(../items/Asset1-811.png) no-repeat;
     font-size: 0;
     position: absolute;
     top: 2%;
@@ -81,7 +81,7 @@ header > .carrito {
 header > .carrito > .paa {
 	color: #fff;
     font-size: 2em;
-    margin-right: -15em;
+    margin-right: -18em;
 }
 header > div{
 	/* background: #3d4242;*/
